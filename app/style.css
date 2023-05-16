@@ -1,60 +1,60 @@
-header {
+/* header {
   display: block;
   top: 0;
   width: 100%;
   background-color: white;
+} */
+
+/* navigation styling */
+.pre-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
-header h1 {
-  margin-bottom: 1pt;
-}
-
-nav {
-  display: block;
-}
-
-nav.navigation_bar {
+ul.navigation-bar {
   border: 3pt solid;
+  display: flex;
+  gap: 5%;
+  list-style-type: none;
+  padding: 1%;
 }
 
-nav a {
-  text-decoration: none;
-}
-
-nav.navigation_path ul {
+ul.navigation-path {
   border: 1pt solid;
+  list-style-type: none;
 }
 
-nav ul li {
-  display: inline;
-}
-
-nav.navigation_bar ul li {
-  margin: 1%;
-}
-
-nav ul li.child_page::before {
+nav ul li.child-page::before {
   content: '>';
   margin-left: 1%;
   margin-right: 1%;
 }
 
-/* --- */
+/* footer styling */
 footer{
   border-top: 1pt solid;
-}
-
-/* need for elements allignment accross the top border, not the bottom */
-footer ul {
-  display: inline-block;
   text-decoration: none;
 }
 
-footer ul li {
-  display: block;
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5%;
+  list-style-type: none;
 }
 
-footer a {
+footer ul a {
   text-decoration: none;
 }
+
+footer li ul{
+  list-style-type: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+/* table styling */
 
