@@ -1,0 +1,60 @@
+header {
+  display: block;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+header h1 {
+  margin-bottom: 1pt;
+}
+
+nav {
+  display: block;
+}
+
+nav.navigation_bar {
+  border: 3pt solid;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav.navigation_path ul {
+  border: 1pt solid;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav.navigation_bar ul li {
+  margin: 1%;
+}
+
+nav ul li.child_page::before {
+  content: '>';
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* --- */
+footer{
+  border-top: 1pt solid;
+}
+
+/* need for elements allignment accross the top border, not the bottom */
+footer ul {
+  display: inline-block;
+  text-decoration: none;
+}
+
+footer ul li {
+  display: block;
+}
+
+footer a {
+  text-decoration: none;
+}
+
