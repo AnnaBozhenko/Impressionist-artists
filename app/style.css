@@ -56,5 +56,43 @@ footer p {
   text-align: right;
 }
 
-/* table styling */
+/* authorisation */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+form > div > * {
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form input {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+/* form input styling */
+.user_text {
+  display: flex;
+  flex-direction: column;
+  /* neccessary to change gap value */
+  gap: 5px;
+} 
+
+.user_text textarea {
+  width: 50%;
+}
+.user_text input[type="submit"] {
+  width:fit-content;
+}
+
+
 
