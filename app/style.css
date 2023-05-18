@@ -1,39 +1,38 @@
-/* header {
-  display: block;
-  top: 0;
-  width: 100%;
-  background-color: white;
-} */
-
-/* navigation styling */
+/* header styling */
 .pre-navigation {
   display: flex;
-  justify-content: space-between;
+}
+
+.pre-navigation h1 {
+  width: 100%;
+  text-align: center;
 }
 
 ul.navigation-bar {
   border: 3pt solid;
   display: flex;
-  gap: 5%;
-  list-style-type: none;
+  justify-content: space-between;
+  list-style: none;
   padding: 1%;
 }
 
 ul.navigation-path {
   border: 1pt solid;
-  list-style-type: none;
+  display: flex;
+  list-style: none;
+  width:fit-content;
+  margin: 0;
+  padding: 0 1rem;
 }
 
-nav ul li.child-page::before {
-  content: '>';
-  margin-left: 1%;
-  margin-right: 1%;
+ul.navigation-path li:not(:last-child)::after {
+  margin: 0 0.25rem;
+  content: "→";
 }
 
 /* footer styling */
 footer{
   border-top: 1pt solid;
-  text-decoration: none;
 }
 
 footer > ul {
@@ -41,7 +40,7 @@ footer > ul {
   flex-direction: row;
   align-items: flex-start;
   gap: 5%;
-  list-style-type: none;
+  list-style: none;
 }
 
 footer ul a {
@@ -49,7 +48,7 @@ footer ul a {
 }
 
 footer li ul{
-  list-style-type: none;
+  list-style: none;
 }
 
 footer p {
@@ -94,5 +93,65 @@ form label, form input {
   width:fit-content;
 }
 
+/* styling forms for quizzes */
+form legend {
+  background-color: antiquewhite;
+  padding: 5pt 1% 5pt 1%;
+}
 
+form fieldset {
+  border: none;
+}
 
+/* styling artists image links */
+section.artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.artists figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 20%;
+}
+
+section.artists img {
+  max-width: 100%;
+}
+
+section.artists figcaption {
+  margin: 5px;
+  text-align: center;
+}
+
+/* styling tables */
+
+table {
+  table-layout: auto;
+  width: 50%;
+  border-collapse: collapse;
+  border: 3px solid;
+  margin: 5px;
+}
+
+td, th {
+  border: 1px solid;
+  padding: 5px; 
+}
+
+thead {
+  border: 2px solid;
+  background-color: antiquewhite;
+}
+
+table caption {
+  margin-bottom: 5px;
+}
+
+/* dictiionary styling */
+dt {
+  font-weight: bold;
+  margin-bottom: 1pt;
+}
