@@ -23,24 +23,41 @@
                 </ul>
                 <ul class="navigation-path">
                     <li><a href="../index.html">Головна</a></li>
-                    <li class="child-page">Авторизація</li>
+                    <li>Авторизація</li>
                 </ul>
             </nav>
         </header>
-        <main>
-                <form>
+        <main>  
+                <h3>Вже зареєстровані, тоді заходьте!</h3>
+                <form class="log-in">
                     <div>
                         <div>
-                            <label for="name">User name:</label>
-                            <label for="password">Password:</label>
+                            <label for="name">Ім'я користувача:</label>
+                            <label for="password">Пароль:</label>
                         </div>
                         <div>
                             <input type="text" id="name">
                             <input type="text" id="password">
                         </div>
                     </div>
-                    <div><input type="submit" value="submit"></div>
-                </form>    
+                    <div><input type="submit" value="увійти"></div>
+                </form> 
+                <h3>Ще не зареєстровані, тоді заповніть форму</h3>
+                <form>
+                    <div>
+                        <div>
+                            <label for="name">Вкажіть ім'я:</label>
+                            <label for="email">Вкажіть e-mail:</label>
+                            <label for="pass">Вкажіть пароль:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name">
+                            <input type="email" id="email">
+                            <input type="password" id="pass" minlength="7">
+                        </div>
+                    </div> 
+                    <div><input type="submit" value="зареєструватися"></div>
+                </form>
         </main>
         <footer>
             <ul>
