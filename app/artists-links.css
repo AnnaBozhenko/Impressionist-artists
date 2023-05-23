@@ -1,0 +1,51 @@
+/* styling artists image links */
+section#artists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#artists > * {
+  margin: 1%;
+}
+
+section a {
+  text-decoration: none;
+}
+
+section#artists figure {
+  border: 2px solid;
+  overflow: hidden;
+  height: 40vh;
+  width: 30vh;
+  display: inline-block;
+}
+
+section#artists img {
+  height: 90%;
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+
+section#artists img.square-photo {
+  translate: -10% 0;
+}
+
+section#artists img.scale-bigger {
+  transform: scale(1.5);
+  translate: 10% 20%;
+}
+
+section#artists figcaption {
+  height: 10%;
+  text-align: center;
+  font-family: "Book Antiqua";
+  font-size: 1em;
+  color: white;
+  background-color: black;
+  padding: 3% 1%;
+  z-index: 1;
+}
+
