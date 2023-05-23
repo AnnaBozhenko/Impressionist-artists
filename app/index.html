@@ -3,16 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>Імпресіоністи</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header-styling.css">
+        <link rel="stylesheet" href="artists-links.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Французькі художники-імпресіоністи</h1>
-                <a href="user/authorise.html">вхід</a>
+                <a href="">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="menu-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="art_gallery.html">Арт-галерея</a></li>
@@ -21,56 +26,78 @@
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li>Головна</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="artists">
+            <section id="artists">
                 <figure>
-                    <img src="images/photos/claude-monet.jpg">
-                    <figcaption><a href="early_impressionists/monet.html">Клод Моне</a></figcaption>
+                    <a href="early_impressionists/monet.html">
+                    <img class="square-photo" src="images/photos/claude-monet.jpg">
+                    <figcaption>Клод Моне</figcaption>
+                    </a>  
                 </figure>
                 <figure>
-                    <img src="images/canvases/edgar-degas.jpg">
-                    <figcaption><a href="early_impressionists/degas.html">Едгар Дега</a></figcaption>
+                    <a href="early_impressionists/degas.html">
+                    <img class="scale-bigger" src="images/canvases/edgar-degas.jpg">
+                    <figcaption>Едгар Дега</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/canvases/georges-seurat.jpg">
-                    <figcaption><a href="post_impressionists/serat.html">Жорж Сьора</a></figcaption>
+                    <a href="post_impressionists/serat.html">
+                    <img class="scale-bigger" src="images/canvases/georges-seurat.jpg">
+                    <figcaption>Жорж Сьора</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/photos/henri-de-toulouse-lautrec.jpg">
-                    <figcaption><a href="post_impressionists/toulouse_lautrec.html">Анрі Тулуз-Лотрек</a></figcaption>
+                    <a href="post_impressionists/toulouse_lautrec.html">
+                    <img class="scale-bigger" src="images/photos/henri-de-toulouse-lautrec.jpg">
+                    <figcaption>Анрі Тулуз-Лотрек</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/photos/camille_pissaro.jpg">
-                    <figcaption><a href="early_impressionists/pissaro.html">Каміль Піссаро</a></figcaption>
+                    <a href="early_impressionists/pissaro.html">
+                    <img class="scale-bigger" src="images/photos/camille_pissaro.jpg">
+                    <figcaption>Каміль Піссаро</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/canvases/gustave_caillebotte.jpeg">
-                    <figcaption><a href="early_impressionists/cailleboitte.html">Густав Кайбот</a></figcaption>
+                    <a href="early_impressionists/cailleboitte.html">
+                    <img class="scale-bigger" src="images/canvases/gustave_caillebotte.jpeg">
+                    <figcaption>Густав Кайбот</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/photos/Frederic_Bazille.jpg">
-                    <figcaption><a href="early_impressionists/bazille.html">Жан Фредерік Базиль</a></figcaption>
+                    <a href="early_impressionists/bazille.html">
+                    <img class="square-photo" src="images/photos/Frederic_Bazille.jpg">
+                    <figcaption>Жан Фредерік Базиль</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/canvases/paul_cezanne.jpeg">
-                    <figcaption><a href="early_impressionists/cezanne.html">Поль Сезан</a></figcaption>
+                    <a href="early_impressionists/cezanne.html">
+                    <img class="scale-bigger" src="images/canvases/paul_cezanne.jpeg">
+                    <figcaption>Поль Сезан</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/canvases/berthe_morisot.jpg">
-                    <figcaption><a href="early_impressionists/morisot.html">Берта Морізо</a></figcaption>
+                    <a href="early_impressionists/morisot.html">
+                    <img class="scale-bigger" src="images/canvases/berthe_morisot.jpg">
+                    <figcaption>Берта Морізо</figcaption>
+                    </a>
                 </figure>
                 <figure>
-                    <img src="images/photos/Pierre-Auguste-Renoir.jpg">
-                    <figcaption><a href="early_impressionists/renoir.html">П'єр Огюст Ренуар</a></figcaption>
+                    <a href="early_impressionists/renoir.html">
+                    <img class="square-photo" src="images/photos/Pierre-Auguste-Renoir.jpg">
+                    <figcaption>П'єр Огюст Ренуар</figcaption>
+                    </a>
                 </figure>
                 <figure>
+                    <a href="post_impressionists/gauguin.html">
                     <img src="images/photos/paul_gauguin.jpg">
-                    <figcaption><a href="post_impressionists/gauguin.html">Поль Гоген</a></figcaption>
+                    <figcaption>Поль Гоген</figcaption>
+                    </a>
                 </figure>
             </section>
             <article>
