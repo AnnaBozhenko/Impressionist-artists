@@ -2,17 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Арт-галерея</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="art-gallery.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
-                <h1>Арт-галерея</h1>
-                <a href="user/authorise.html">вхід</a>
-            </div class="navigation">
-            <nav >
-                <ul class="navigation-bar">
+            <div id="heading">
+                <h1>Французькі художники-імпресіоністи</h1>
+                <a href="user/authorise.html">увійти</a>
+            </div>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li>Арт-галерея</li>
@@ -21,96 +27,103 @@
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="index.html">Головна</a></li>
                     <li>Арт-галерея</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <table>
-                <caption>Таблиця настроїв</caption>
-                <thead>
-                    <tr>
-                        <th>Настрій</th>
-                        <th>Картина</th>
-                        <th>Автор</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>підбита птаха</td>
-                        <td>The heron</td>
-                        <td>Базиль</td>
-                    </tr>
-                    <tr>
-                        <td>інфантильність</td>
-                        <td>Діти у ванній</td>
-                        <td>Берта Морізо</td>
-                    </tr>
-                    <tr>
-                        <td>в роботі</td>
-                        <td>Шліфувальники підлоги</td>
-                        <td>Кайбот</td>
-                    </tr>
-                    <tr>
-                        <td>хочу подрімати</td>
-                        <td>Дрімота</td>
-                        <td>Кайбот</td>
-                    </tr>
-                    <tr>
-                        <td>нічого</td>
-                        <td>портрет Еміля Золя</td>
-                        <td>Кайбот</td>
-                    </tr>
-                    <tr>
-                        <td>спустошення</td>
-                        <td>The heron</td>
-                        <td>Базиль</td>
-                    </tr>
-                    <tr>
-                        <td>замріяність</td>
-                        <td>портрет Жанни Сомарі</td>
-                        <td>Ренуар</td>
-                    </tr>
-                    <tr>
-                        <td>Замилування</td>
-                        <td>Голова собаки</td>
-                        <td>Ренуар</td>
-                    </tr>
-                    <tr>
-                        <td>думи, мої думи</td>
-                        <td>Жюлі, денні мрії</td>
-                        <td>Морізо</td>
-                    </tr>
-                    <tr>
-                        <td>вирушаю</td>
-                        <td>Човни на вході до Медіни</td>
-                        <td>морізо</td>
-                    </tr>
-                    <tr>
-                        <td>палаю</td>
-                        <td>Дім парламенту</td>
-                        <td>Моне</td>
-                    </tr>
-                    <tr>
-                        <td>самота (мені добре)</td>
-                        <td>копиці сіна</td>
-                        <td>Моне</td>
-                    </tr>
-                    <tr>
-                        <td>самота (мені погано)</td>
-                        <td>Медитації мадам Моне, сидячи на дивані</td>
-                        <td>Моне</td>
-                    </tr>
-                    <tr>
-                        <td>я хочу сама!</td>
-                        <td>Завантаження Gestrandetes у порту Fécamp</td>
-                        <td>Моне</td>
-                    </tr>
-                </tbody>
-                
-            </table>
+            <div class="canvases-container">
+                <figure>
+                    <img src="images/canvases/bazille_frederic_bazilles_studio.jpg">
+                    <figcaption>"Студія", Жан Фредерик Базиль</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/bazille_frederic_the_toilette.jpg">
+                    <figcaption>"Вбирання", Жан Фредерик Базиль</figcaption>
+                </figure>
+                <figure id="julie-daydreaming">
+                    <img src="images/canvases/morisot_julie-daydreaming.jpg">
+                    <figcaption>"Жюлі, денні мрії", Берта Морізо</figcaption>
+                </figure>
+                <figure id="children-at-the-basin">
+                    <img src="images/canvases/morisot_children-at-the-basin.jpg">
+                    <figcaption>"Діти у ванній", Берта Морізо</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/caillebotte_gustave_calfs_head_and_ox_tongue.jpg">
+                    <figcaption>"Теляча голва та бичачий язик", Густав Кайбот</figcaption>
+                </figure>
+                <figure id="floor-scrapers">
+                    <img src="images/canvases/caillebotte_gustave_the_floor_scrapers.jpg">
+                    <figcaption>"Шліфувальники підлоги", Густав Кайбот</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/caillebotte_gustave_rainy_street.jpg">
+                    <figcaption>"Дощова вулиця", Густав Кайбот</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/Camille_Pissarro_Boulevard_Montmartre.jpeg">
+                    <figcaption>"Бульвар Мон-Мартр", Каміль Піссаро</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/cezanne_paul_mont_sainte_victoire.jpg">
+                    <figcaption>"Гора Сент-Віктор", Поль Сезан</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/claude_monet_impression-sunrise.jpg">
+                    <figcaption>"Враження, схід сонця", Клод Моне</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/claude_monet_rouen_cathedral.jpg">
+                    <figcaption>"Собор в Руані", Клод Моне</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/monet_windmill-at-zaandam.jpg">
+                    <figcaption>"Мельниці у Зандамі", Клод Моне</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/claude_monet_poplars_at_giverny_sunrise.jpg">
+                    <figcaption>"Тополі в Живерні", Клод Моне</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/degas_edgar_la_toilette.jpg">
+                    <figcaption>"Вбирання", Едгар Дега</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/degas_three-dancers-in-an-exercise-hall.jpg">
+                    <figcaption>"Танцівниці в трунувальному залі", Едгар Дега</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/gauguin_paul_2_tahitian_women.jpg">
+                    <figcaption>"Дві жінки з Таїті", Поль Гоген</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/renoir_pierre_auguste_umbrellas.jpg">
+                    <figcaption>"Парасольки", П'єр Огюст Ренуар</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/renoir_portrait-of-claude-monet.jpg">
+                    <figcaption>"Портрет Клода Моне", П'єр Огюст Ренуар</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/seurat_georges_la_seine_a_la_grande_jatte.jpg">
+                    <figcaption>"Сена, на la Grande Jatte", Жорж Сьора</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/seurat_georges_the_circus.jpg">
+                    <figcaption>"Цирк", Жорж Сьора</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/Toulouse-Lautrec_Self-portrait-in-the-crowd-background.jpg">
+                    <figcaption>"Мулен-Руж", Анрі Тулуз-Лотрек</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/canvases/Toulouse-Lautrec_theatre.jpg">
+                    <figcaption>"Жінка-клоун", Анрі Тулуз-Лотрек</figcaption>
+                </figure>
+            </div>
         </main>
         <footer>
             <ul>

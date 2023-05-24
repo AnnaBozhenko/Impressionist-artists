@@ -2,40 +2,143 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Едгар Дега</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Едгар Дега</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>Едгар Дега</li>
                 </ul>
             </nav>
         </header>
             <main>
-                <figure>
-                    <!-- taken from https://www.wikiart.org/en/edgar-degas -->
-                    <img src="../images/canvases/edgar-degas.jpg" alt="The Edgar Degas's portrait">
-                    <figcaption>
-                        Едгар Дега
-                    </figcaption>
-                </figure>
+                <article>
+                    <div id="artist-intro">
+                        <figure>
+                            <!-- taken from https://www.wikiart.org/en/edgar-degas -->
+                            <img src="../images/canvases/edgar-degas.jpg" alt="The Edgar Degas's portrait">
+                            <figcaption>Едгар Дега</figcaption>
+                        </figure>
+                        <p> Always remembered as an Impressionist, Edgar Degas was a member of the seminal group of Paris artists who began to exhibit together in the 1870s.
+                         He shared many of their novel techniques, was intrigued by the challenge of capturing effects of light and attracted to scenes of urban leisure.
+                          But Degas's academic training, and his own personal predilection toward Realism, set him apart from his peers, and he rejected the label 
+                          'Impressionist' preferring to describe himself as an 'Independent.' His inherited wealth gave him the comfort to find his own way, and later 
+                          it also enabled him to withdraw from the Paris art world and sell pictures at his discretion. He was intrigued by the human figure, and in his 
+                          many images of women - dancers, singers, and laundresses - he strove to capture the body in unusual positions. While critics of the Impressionists
+                           focused their attacks on their formal innovations, it was Degas's lower-class subjects that brought him the most disapproval.
+                        </p>   
+                    </div>
+                    <h3>Childhood</h3>
+                    <p>
+                        Edgar Degas was the eldest of five children of Célestine Musson de Gas, an American by birth, and Auguste de Gas, a banker. Edgar later changed his surname 
+                        to the less aristocratic sounding 'Degas' in 1870. Born into a wealthy Franco-Italian family, he was encouraged from an early age to pursue the arts, though
+                         not as a long-term career. Following his graduation in 1853 with a baccalaureate in literature, the eighteen-year-old Degas registered at the Louvre as a 
+                         copyist, which he claimed later in life is the foundation for any true artist.
+                    </p>
+                    <p>
+                        After a brief period at law school, he gave up on the his father's aspirations of Degas becoming a lawyer. In 1855 he was admitted to the École des Beaux-Arts in Paris, 
+                        where he studied drawing under the academic artist Louis Lamothe, a former pupil of Jean-Auguste-Dominique Ingres. Degas is even later said to follow Ingres's maxim: 
+                        "Draw lines, young man., draw lines." That same year, the Exposition Universelle took place, and Degas was enthralled by Gustave Courbet's Pavilion of Realism.
+                    </p>
+                    <h3>Early Period and Training</h3>
+                    <div class="image-block">
+                        <p>
+                        In 1856, when Degas was aged 22, he traveled to Naples, Italy, to visit his aunt, the Baroness Bellelli and her family. This three-year trip was an important 
+                        moment in his development, and resulted in the Realist portrait The Bellelli Family (1859). He spent countless hours combing the museums and galleries of Italy, 
+                        carefully studying Renaissance works by Michelangelo, Raphael and Titian, among others.
+                        </p>
+                        <figure class="left-side">
+                            <img src="../images/canvases/degas_edgar_the_bellelli_family.jpg">
+                            <figcaption>«Сім'я Белеллі»</figcaption>
+                        </figure>
+                        <p>
+                            In 1864, while copying a picture by Velázquez at the Louvre, he met Édouard Manet, who by chance was copying the same painting. His friendship with Manet was 
+                            instrumental for Degas, and probably for Manet, and even the development of Impressionism as a whole. The outspoken, well-regarded Manet was a very different 
+                            personality from the introspective, and often self-doubting Degas. But their friendship and close association lasted until the end of Manet's life and is 
+                            discussed in detail in Sebastian Smee's book "The Art of Rivalry".
+                        </p>
+                    </div>
+                    <h3>Mature Period</h3>
+                    <div class="image-block">
+                        <p>
+                            Although the 1860s was a productive period in Degas's career, his most renowned body of work was created in the 1870s. By this time he had discovered his true 
+                            muse - Paris. He (much as Manet and other Impressionists) drew inspiration from its boulevards, cafés, shops, dance studios, drawing rooms, theaters, and operas.
+                             And he became well known for his close observation, devoting much time to capturing the detail of surrounding human beings. Perhaps for this reason he rejected
+                              the label 'Impressionist', believing it implied something accidental and incomplete.
+                        </p>
+                        <figure class="left-side">
+                            <img src="../images/canvases/edgar-degas-in-a-cafe.jpg">
+                            <figcaption> «У кафе»</figcaption>
+                        </figure>
+                    </div>
+                    <p>
+                        Evidence of this can be found in seminal works such as Foyer de la Danse (1872), Musicians in the Orchestra (1872) and A Carriage at the Races (1873). Each of these 
+                        pictures also exemplify how Degas assumed unconventional points-of-view, suggesting the perspective of a distracted spectator. Yet unlike contemporaries like Renoir 
+                        and Monet, Degas was not a plein air painter, preferring instead the light and reliability of the studio. Incidentally, his few outdoor scenes were produced from
+                         memory, or conjured in part from his imagination.
+                    </p>
+                    <h3>Late period</h3>
+                    <div class="image-block">
+                        <p>
+                            As the 19th century came to a close, Degas's pace of work waned, and he began spending more time collecting the works of other artists he admired. He purchased work 
+                            by contemporaries such as Manet, Pissarro, van Gogh, Gauguin and Cézanne, as well as older artists who had informed Degas as a young man, like Delacroix and Ingres.
+                             Late works, like the bronze Woman Rubbing Her Back with a Sponge (1900), is a testament to Degas's continued devotion to capturing the female form.
+                        </p>
+                        <figure class="left-side">
+                            <img src="../images/canvases/degas_three-dancers-in-an-exercise-hall.jpg">
+                            <figcaption>«3 танцівниці в тренувальному залі»</figcaption>
+                        </figure>
+                    </div>
+                    <div class="image-block">
+                        <p>
+                            Although Degas abandoned oil painting later in life, he continued to work in a variety of media, including pastels and photography, yet sculpture became his preferred 
+                            medium as his eyesight deteriorated. He increasingly became a recluse, and most of his friendships with artists like Monet and Renoir, eventually dissolved. These
+                            ruptures were hastened by Degas's outspoken anti-Semitism, which was amplified by his stance during the infamous Dreyfus Affair. He died in 1917.
+                        </p>
+                        <figure class="left-side">
+                            <img src="../images/canvases/degas_edgar_la_toilette.jpg">
+                            <figcaption>«Вбирання»</figcaption>
+                        </figure>
+                    </div>
+                    <h3>The legacy of Edgar Degas</h3>
+                    <p>
+                        Although Degas suffered criticism during his lifetime, by the time of his death his reputation was secure as one of the leaders of late-19th-century French art. 
+                        His distinct difference from the Impressionists, his greater tendency toward Realism, had also come to be appreciated. His standing has only increased since his death, 
+                        though since the 1970s he was been the focus of a lot of scholarly attention and criticism, primarily focused around his images of women, which have been seen as misogynistic.
+                         Some have even compared his treatment of the other sex linked to his antisemitism and overall lack of moral compass.
+                    </p>
+                </article>
+                <nav id="navigation_between_pages">
+                    <a id="prev-page" href="cezanne.html">Назад<br><span>Поль Сезан</span></a>
+                    <a id="next-page" href="morisot.html">Вперед<br><span>Берта морізо</span></a>
+                </nav>
+                <h3>Матеріали взято з:</h3>
+                <ul id="source-materials">
+                    <li><a href="https://www.theartstory.org/artist/degas-edgar/">The art story</a></li>
+                </ul>
             </main>
             <footer>
                 <ul>

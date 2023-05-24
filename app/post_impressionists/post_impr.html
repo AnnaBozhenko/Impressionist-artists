@@ -2,38 +2,58 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Пост-імпресіоністи</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists-links.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
-                <h1>Пост-імпресіоністи</h1>
-                <a href="../user/authorise.html">вхід</a>
+            <div id="heading">
+                <h1>Французькі художники-імпресіоністи</h1>
+                <a href="../user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="../early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li>Пост-імпресіоністи</li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
                     <li>Пост-імпресіоністи</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h3>List of impressionists</h3>
-            <ul>
-                <li><a href="gauguin.html">Paul Gauguin</a></li>
-                <li><a href="serat.html">Georget Serat</a></li>
-                <li><a href="toulouse_lautrec.html">Henri de Toulouse-Lautrec</a></li>
-            </ul>
+            <section id="artists">
+                <figure>
+                    <a href="serat.html">
+                    <img class="scale-bigger" src="../images/canvases/georges-seurat.jpg">
+                    <figcaption>Жорж Сьора</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="toulouse_lautrec.html">
+                    <img class="scale-bigger" src="../images/photos/henri-de-toulouse-lautrec.jpg">
+                    <figcaption>Анрі Тулуз-Лотрек</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="gauguin.html">
+                    <img src="../images/photos/paul_gauguin.jpg">
+                    <figcaption>Поль Гоген</figcaption>
+                    </a>
+                </figure>
+            </section>
         </main>
         <footer>
             <ul>

@@ -2,34 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Авторизація</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="user.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
-                <h1>Авторизація</h1>
-                <a href="">вхід</a>
+            <div id="heading">
+                <h1>Французькі художники-імпресіоністи</h1>
+                <a href="">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="../early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="user.html">Користувачу</a></li>
+                    <li><a href="user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
                     <li>Авторизація</li>
                 </ul>
             </nav>
         </header>
         <main>  
-                <h3>Вже зареєстровані, тоді заходьте!</h3>
-                <form class="log-in">
+                <h3>Вже зареєстровані:</h3>
+                <form>
                     <div>
                         <div>
                             <label for="name">Ім'я користувача:</label>
@@ -42,7 +48,7 @@
                     </div>
                     <div><input type="submit" value="увійти"></div>
                 </form> 
-                <h3>Ще не зареєстровані, тоді заповніть форму</h3>
+                <h3>Ще не зареєстровані:</h3>
                 <form>
                     <div>
                         <div>
@@ -58,6 +64,7 @@
                     </div> 
                     <div><input type="submit" value="зареєструватися"></div>
                 </form>
+                
         </main>
         <footer>
             <ul>

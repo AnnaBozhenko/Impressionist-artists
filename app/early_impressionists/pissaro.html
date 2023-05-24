@@ -2,40 +2,128 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Каміль Піссаро</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Каміль Піссаро</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
-                    <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>Каміль Піссаро</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://www.biography.com/artists/camille-pissarro -->
-                <img src="../images/canvases/camille-pissaro.jpg" alt="The Camille Pissaro's portrait">
-                <figcaption>
-                    Каміль Піссаро
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- taken from https://www.biography.com/artists/camille-pissarro -->
+                        <img src="../images/canvases/camille-pissaro.jpg" alt="The Camille Pissaro's portrait">
+                        <figcaption>
+                            Каміль Піссаро
+                        </figcaption>
+                    </figure>
+                    <p>
+                        The only painter to exhibit in all eight Impressionist exhibitions organized between 1874 and 1886, Camille Pissarro became a pivotal artist and mentor 
+                        within the movement. While the Impressionists are known for their depictions of city streets and country leisure, Pissarro covered his canvases with 
+                        images of the day-to-day life of French peasants. His greatest work joins his fascination with rural subject matter with the empirical study of nature 
+                        under different conditions of light and atmosphere, deriving from intense study of French Realism. Like those of his Impressionist cohorts, his paintings
+                         are delicate studies of the effect of light on color in nature. However, he continually sought out younger, progressive artists as colleagues, and his articulation of scientific color theory in his later work would prove indispensable for the following generation of avant-garde painters.
+                    </p>
+                </div>
+                <h3>Childhood</h3>
+                <p>
+                    Jacob Abraham Camille Pissarro was born to a Jewish-Portuguese family and grew up in St. Thomas in the US Virgin Islands, then the Danish West Indies. His parents, 
+                    Frederic Pissarro and Rachel Petit, owned a modest general hardware business and encouraged their four sons to pursue the family trade. In 1842, Pissarro was sent 
+                    away to a boarding school in Passy near Paris, France, to complete his education. His artistic interests began to emerge thanks to the school's headmaster, Monsieur
+                     Savary, who encouraged him to draw directly from nature and to use direct observation in his drawings, empirically rendering each object in its truest form. At age 
+                     17, Pissarro returned to St. Thomas to immerse himself in the family business; however, the artist quickly tired of mercantile pursuits and continued to draw ship 
+                     scenes in his leisure time at the shipping docks.
+                </p>
+                <h3>Early Training</h3>
+                <div class="image-block">
+                   <p>
+                    In the early 1850s, Pissarro abandoned the family business after meeting the Danish painter Fritz Melbye, following Melbye to Caracas, Venezuela, and committing 
+                    himself to becoming a painter. This act signals a dedicated independence that Pissarro would never abandon in his career; largely if not entirely self-taught, 
+                    Pissarro was uncompromising in his commitment to his art, a major factor that contributed to his persistent poverty. By 1855, Pissarro had returned to Paris, 
+                    where he was exposed to the artwork of Eugène Delacroix, Jean-Baptiste-Camille Corot, Gustave Courbet, Charles-François Daubigny, and Jean-François Millet at
+                     the Exposition Universelle and where he began attending private classes at the École des Beaux-Arts in 1856. He began working with Corot, who encouraged him
+                      to submit to the Salon. Taking classes at the Academie Suisse in 1859, Pissarro met Cézanne, who would become one of his closest lifelong friends. In 1861,
+                       Pissarro registered as a copyist at the Musée du Louvre, and around this same time he met Julie Vellay, the daughter of a vineyard owner in the Burgundy region. 
+                       They married in London in 1871, eventually having eight children. His daughter Jeanne-Rachel (nicknamed "Minette") grew ill and died of tuberculosis in 1874 at 
+                       the age of eight, an event that deeply impacted Pissarro, leading him to paint a series of intimate paintings detailing the last year of her life
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/Camille_Pissarro_Boulevard_Montmartre.jpeg">
+                        <figcaption>«Бульвар Монмартр»</figcaption>
+                    </figure> 
+                </div>
+                
+                <h3>Mature Period</h3>
+                <p>The first half of the 1870s is considered the height of Pissarro's career, when he completed some of his most significant pieces, including Hoar Frost, the Old Road
+                     to Ennery, Pointoise (1873). Several personal developments contributed to the sophisticated output of his mature period. From 1870 to 1871, he fled to London to 
+                     escape the chaotic events of the Franco-Prussian War and the Paris Commune, during which time the majority of his earlier works were destroyed. In London, Pissarro 
+                     was introduced to Claude Monet, and the two grew to favor J.M.W. Turner's work exhibited at the National Gallery. Daubigny introduced them to the art dealer
+                      Paul-Durand Ruel, who would later serve as Pissarro's agent in France. Having returned to Paris, Pissarro and Monet organized the first Impressionist exhibition
+                       in 1874 at the photographer Nadar's gallery. Though the exhibition was met with harsh criticism and confusion from viewers, Pissarro's contributions received 
+                       the more thoughtful commentary from writer and art critic Philippe Burty, who noticed the stylistic rapport between the work of Pissarro and Millet. The critic 
+                       Theodore Duret would reiterate this in personal correspondence with Pissarro. Perhaps most importantly, Pissarro's professional and personal relationship with 
+                       Cézanne reached its height in the mid-1870s when the two worked together, closely reexamining and reworking Pissarro's paintings from the 1860s.
+                </p>
+                <h3>Late period</h3>
+                <div class="image-block">
+                    <p>
+                        By the late 1870s, Pissarro's work revealed conflicting stylistic choices drawing him away from a purely Impressionist aesthetic. As Impressionism became more 
+                        widely accepted, Pissarro worked to keep his art avant-garde and relevant by testing new theoretical concepts. He and Edgar Degas made prints together based on 
+                        the compositional techniques used by Japanese woodblock engravers; he also began collaborating with the next-generation Neo-Impressionist painters Paul Signac 
+                        and Georges Seurat in the mid-1880s. This affiliation with younger artists was due to both political and professional affinity. Aesthetically, Pissarro was 
+                        interested in the Pointillist technique espoused by these artists for its theoretical basis in color theory, a concept that resonated with his original exposure
+                         to empirical drawing as a child and his Impressionist fascination with the effect of light on color. Politically, he was a committed anarchist, and the color 
+                         harmonies underpinning Pointillism, created by the juxtaposition of complementary colors, were linked in his mind to the utopian promise of social harmony 
+                         achieved by the union of individuals in an anarchist society.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/pissarro_peasant-women-planting-stakes.jpg">
+                        <figcaption>«Селянки, що забивають кілки»</figcaption>
+                    </figure>
+                </div>
+                
+                <h3>The Legacy of Camille Pissarro</h3>
+                <p>
+                    Pissarro was greatly influenced by the Realist landscapists Corot, Courbet, and Millet and greatly influential to a host of younger painters. As a result, his
+                     body of work created a vital bridge between 19th- and 20th-century realism and abstraction, especially within the legacy of French modernist painting. His
+                      personal investment in the evolution of aesthetic technique contributed to significant developments in the later avant-gardes.
+                </p>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="morisot.html">Назад<br><span>Берта Морізо</span></a>
+                <a id="next-page" href="renoir.html">Вперед<br><span>П'єр Огюст Ренуар</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+            <ul id="source-materials">
+                <li><a href="https://www.theartstory.org/artist/pissarro-camille/">The art story</a></li>
+            </ul>
         </main>
         <footer>
             <ul>

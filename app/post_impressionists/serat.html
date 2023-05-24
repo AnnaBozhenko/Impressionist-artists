@@ -2,26 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Жорж Сьора</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Жорж Сьора</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="../early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li>Жорж Сьора</li>
@@ -29,13 +35,130 @@
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://www.venividivici.us/arte/georges-pierre-seurat/ -->
-                <img src="../images/canvases/GEORGES-PIERRE-SEURAT.jpg" alt="The Georges Pierre Seurat's photo">
-                <figcaption>
-                    Жорж П'єр Сьора
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- taken from https://www.venividivici.us/arte/georges-pierre-seurat/ -->
+                        <img src="../images/canvases/GEORGES-PIERRE-SEURAT.jpg" alt="The Georges Pierre Seurat's photo">
+                        <figcaption>Жорж П'єр Сьора</figcaption>
+                    </figure>
+                    <p>
+                        Georges Seurat is chiefly remembered as the pioneer of the Neo-Impressionist technique commonly known as Pointillism, or Divisionism, an 
+                        approach associated with a softly flickering surface of small dots or strokes of color. His innovations derived from new quasi-scientific 
+                        theories about color and expression, yet the graceful beauty of his work is explained by the influence of very different sources. Initially,
+                         he believed that great modern art would show contemporary life in ways similar to classical art, except that it would use technologically 
+                         informed techniques. Later he grew more interested in Gothic art and popular posters, and the influence of these on his work make it some of
+                          the first modern art to make use of such unconventional sources for expression. His success quickly propelled him to the forefront of the
+                           Parisian avant-garde. His triumph was short-lived, as after barely a decade of mature work he died at the age of only 31. But his innovations
+                            would be highly influential, shaping the work of artists as diverse as Vincent Van Gogh and the Italian Futurists, while pictures like Sunday 
+                            Afternoon on the Island of La Grand Jatte (1884) have since become widely popular icons.
+                    </p>
+                </div>
+                <h3>Childhood</h3>
+                <div class="image-block">
+                    <p>
+                        Georges Seurat was born in Paris December 2, 1859, the youngest of three children. His father, Chrysostome-Antoine Seurat, was a bailiff; his mother,
+                         Ernestine Faivre, came from a prosperous family that had produced several sculptors. Seurat's eccentric father had already retired with a small fortune
+                          by the time Seurat was born, and he spent most of his time in Le Raincy, some 12 kilometers from the comfortable family home in Paris. The young Seurat 
+                          lived with his mother, his brother Émile, and his sister Marie-Berthe.
+                    </p>
+                    <p>In 1870 the family temporarily relocated to Fontainebleau, where they stayed during the Franco-Prussian War and the subsequent Paris Commune rebellion. 
+                        Seurat began to take a serious interest in art as a boy and was encouraged by informal lessons from his maternal uncle, Paul Haumonté, a textile dealer 
+                        and amateur painter.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/seurat_georges_bathers_at_asnieres.jpg">
+                        <figcaption>«Купання в Аньєрі»</figcaption>
+                    </figure>
+                </div>
+                <h3>Early training</h3>
+                <div class="image-block">
+                    <p>
+                        Seurat's formal training began around 1875, when he entered the local municipal art school under the sculptor Justin Lequien. There, he made a friend of 
+                        Edmond Aman-Jean (1858-1935) and together they entered the École des Beaux-Arts run by Henri Lehmann, a disciple of the Neo-Classical painter Jean-Auguste-Dominique Ingres.
+                    </p>
+                    <p>
+                        Seurat attended the Academy from February 1878 until November 1879. The curriculum placed particular emphasis on drawing and composition, and most of Seurat's
+                         time was spent sketching from plaster casts and live models.
+                    </p>
+                    <p>Seurat spent his free time conducting his own artistic studies and frequently visited museums and libraries throughout Paris. He also sought instruction
+                         from the painter Pierre Puvis de Chavannes, whose specialty was large-scale classical, allegorical scenes. Seurat's sketches dating to 1874 include copies
+                          of Holbein's drawings, a sketch of Nicolas Poussin's hand from the acclaimed self-portrait in the Louvre, and figures from drawings by Raphael.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/seurat_georges_la_seine_a_la_grande_jatte.jpg">
+                        <figcaption>la seine a la grande jatte</figcaption>
+                    </figure>
+                </div>
+                <h3>Mature period</h3>
+                <div class="image-block">
+                    <p>
+                        Seurat began to apply his theoretical research to compositions executed between 1881 and 1884, culminating in his first major painting project, the Bathers at
+                         Asnières (1884). This monumental canvas depicted a group of workers relaxing by the Seine and was based on numerous small oil sketches and figure studies. 
+                         The final composition is an accomplished rendition of the light and atmosphere of high summer. It is largely rendered in a criss-cross brushstroke technique 
+                         known as balayé and was later re-touched by Seurat with dots of contrasting color in certain areas.
+                    </p>
+                    <p>
+                        Seurat submitted Bathers to the state-sponsored Salon in 1883, but the jury rejected it. Subsequently, Seurat and several other artists founded the Société 
+                        des Artistes Indépendants, enabling him to exhibit Bathers in June of 1884. There he met and befriended fellow artist Paul Signac who was greatly influenced 
+                        by Seurat's techniques.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/seurat_georges_sunday_afternoon_on_the_island_la_grand_jatte.jpg">
+                        <figcaption>Недільний день на острові la grande jatte </figcaption>
+                    </figure>
+                </div>
+                <p>After the Bathers Seurat began work on Sunday Afternoon on the Island of La Grand Jatte, a mural-sized painting that took him two years to complete. Many times 
+                    the artist visited La Grande Jatte, an island in the Seine located in the Parisian suburb of Neuilly, making drawings and more than thirty oil sketches to
+                     prepare for the final work. In the winter of 1885-86 he reworked the painting in the technique that he called "chromo-luminarism", also known as Divisionism
+                      or Pointillism. This technique uses dots of contrasting color that, when viewed at a distance, interact to create a luminous, shimmering effect. He also 
+                      repainted sections of the Bathers in the same style around 1887.
+                </p>
+                <h3>Late Period</h3>
+                <p>
+                    The exhibition of La Grande Jatte in 1886 unexpectedly aroused interest in Seurat's work internationally. Soon after the exhibition, Seurat was mentioned 
+                    in an avant-garde review and some of his paintings were shown by the renowned art dealer Paul Durant-Ruel in both Paris and New York City.
+                </p>
+                <div class="image-block">
+                    <p>
+                        During this time he began associating with a very enclosed group of Symbolist artists and writers based in Paris. His new associations troubled his friends 
+                        Pissarro and Signac, who believed he was forsaking the pure study of color and light in favor of idealized subjects. Seurat's last major works depict Paris 
+                        nightlife and all share a similar muted palette that differs greatly from the vibrancy of his earlier paintings.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/seurat_georges_the_circus.jpg">
+                        <figcaption>Цирк</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    Apart from a brief period of renewed military service in summer 1887, Seurat spent his summers on the Normandy coast, painting seaside scenes of Honfleur in 
+                    1886, Port-en-Bessin in 1888, Le Crotoy in 1889 and Gravelines in 1890. In winter he finished these paintings and produced large figure compositions. Although
+                     executed in his Pointillist style, the dots tended to be finer and more spaced out, giving the paintings a more spontaneous appearance.
+                </p>
+                <h3>The Legacy of Georges Seurat</h3>
+                <p>
+                    Seurat was only 31 when he died, yet he left behind an influential body of work, comprising seven monumental paintings, hundreds of drawings and sketches, 
+                    and around 40 smaller-scale paintings and sketches. Although his oeuvre is relatively small in quantity, it had a lasting impact. He was among the first 
+                    artists to make a systematic and devoted use of color theory, and his technical innovations influenced many of his peers. When the term Neo-Impressionism 
+                    was coined by art critic Félix Fénéon in 1886, it was to describe Seurat, Signac, and Pissarro's new style of painting and their rejection of the spontaneity 
+                    of Impressionism.
+                </p>
+                <p>
+                    Poised between Impressionism in the 19th century, and Fauvism and Cubism in the early-20th, Neo-Impressionism brought with it a new awareness of the surface
+                     qualities of painting, and of decorative effects, thereby contributing to the development of abstraction.
+                </p>
+                <p>
+                    Seurat is often cited by artists with an interest in the visual effects of color, form, and light. Painter Bridget Riley has credited him with influencing her particular brand of Op art.
+                </p>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="post_impr.html">Назад<br><span>Пост-імпресіоністи</span></a>
+                <a id="next-page" href="gauguin.html">Вперед<br><span>Поль Гоген</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+                <ul id="source-materials">
+                    <li><a href="https://www.theartstory.org/artist/seurat-georges/">The art story</a></li>
+                </ul>
         </main>
         <footer>
             <ul>

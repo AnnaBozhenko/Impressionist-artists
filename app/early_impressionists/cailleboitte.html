@@ -2,44 +2,167 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Густав Кайботт</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Густав Кайботт</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>Густав Кайботт</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://artandseek.org/2015/11/13/the-greatest-impressionist-painter-youve-never-heard-of/ -->
-                <img src="../images/canvases/gustave_caillebotte.jpeg" alt="The Gustave Cailleboitte's portrait">
-                <figcaption>
-                    Густав Кайботт
-                </figcaption>
-            </figure>
             <article>
-                <p>Твори Густава Кайботта нагадують плинність життя, яке висвітлює і композитор Ерік Саті, візьміть до прикладу Gymnopedie №1:</p>
-                <audio src="../audios/eric_satie_gymnopedie_1.mp3" type="audio/mp3" controls></audio>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- taken from https://artandseek.org/2015/11/13/the-greatest-impressionist-painter-youve-never-heard-of/ -->
+                        <img src="../images/canvases/gustave_caillebotte.jpeg" alt="The Gustave Cailleboitte's portrait">
+                        <figcaption>
+                            Густав Кайботт
+                        </figcaption>
+                    </figure>
+                    <p>Even up to the 1950s, Gustave Caillebotte was relatively unknown despite achieving much in Paris during the reign of the Impressionists.
+                         Like many of his fellow avant-garde artists, he was fascinated by the impact of industrialization and modernization on the city of
+                          Paris and its inhabitants. While he is classified as an Impressionist, the paintings that are considered by most to be his masterpieces 
+                          actually fall more into the category of Realism, like the work of his predecessors, Millet and Courbet, and even Degas or Monet's 
+                          earlier work. Individual paintings in his oeuvre frequently feature the distinctive, loose brushwork and lighter palette of the Impressionist 
+                          style, but the paintings for which he is best known are large-scale, precise "evocations of photographic naturalism," as one contemporary
+                           critic put it, although at the time the comment was meant to be taken pejoratively. Ultimately, what he had most in common with his Impressionist
+                            colleagues was his choice of subject matter: he depicted themes from everyday life rather than those favored by formally trained, academic painters.
+                    </p>
+                </div>
+                <p>Твори Густава Кайботта нагадують композиції Еріка Саті, візьміть до прикладу Gymnopedie №1:</p>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GVm5ZsuIPGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h3>Childhood and Education</h3>
+                    <p>
+                        Gustave Caillebotte was born into a wealthy Parisian family on August 19, 1848. The family lived in Paris on the rue du Faubourg-Saint-Denis. 
+                        Martial Caillebotte, his father, had inherited his family's military textile business. Additionally, the elder Caillebotte was a judge at the 
+                        Tribunal de commerce in the Seine department. He had already been widowed twice by the time he married his third wife and Gustave's mother, 
+                        Celeste Daufresne. The eldest of her three children with Martial, Gustave had two younger brothers, Rene and Martial.
+                    </p>
+                    <p>
+                        In 1860, the family began going for the summer to their estate in Yerres, which was 12 miles south of Paris on the Yerres River. His father had purchased 
+                        land there, including a large home, and it was there on the family's extensively landscaped property where the young Caillebotte first began drawing and painting.
+                    </p>
+                <h3>Early Training</h3>
+                <div class="image-block">
+                    <p>Following the war, Caillebotte began pursuing his artistic career with increased fervor. He visited the studio of the well-respected academic painter Léon Bonnat, who encouraged 
+                    him to begin taking a career in art seriously. Bonnat, a Realist painter who had influential friends like the writer Émile Zola and artists Edgar Degas and Édouard
+                    Manet, was a teacher at the prestigious École des Beaux Arts. Among Bonnat's more famous students through the years were Henri de Toulouse-Lautrec, John Singer 
+                    Sargent, Thomas Eakins, Georges Braque, Jean Beraud, and Edvard Munch. Caillebotte threw himself enthusiastically into his new vocation, including enrolling in 
+                    the École des Beaux-Arts in 1873, although he spent very little time there, preferring his own studio in his family's home.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/caillebotte_gustave_the_floor_scrapers.jpg">
+                        <figcaption>«Шліфувальники підлоги»</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    Caillebotte's father died in 1874. His brother Rene died only two years later and in 1878, his mother died, leaving the two remaining sons, Gustave and Martial, to divide
+                     the family fortune between them. Around the time that his father died, Caillebotte made some vital connections in the art world, befriending a number of artists who were not
+                      involved with the French Academy, including Monet, Renoir, Pissarro, and De Nittis. He was a colleague and, in some cases, close friend of some of the most important avant-garde 
+                      artists of the period.
+                </p>
+                <p>
+                    Caillebotte made his artistic debut in 1876 at the second exhibition of the Impressionists (there were 8 exhibitions total), the loosely knit group of artist also known as the
+                     "Independents," the "Intentionalists," and the "Intransigents." In keeping with the Impressionists' avant-garde style, a rejection of academic painting and the formalities of 
+                     the traditional exhibition protocols of the official Salon, Caillebotte, Renoir, Monet, and others produced small, independent exhibitions of their work.
+                </p>
+                <h3>Mature Period</h3>
+                <div class="image-block">
+                    <p>
+                        By the time of the third Impressionist exhibition in 1877, Caillebotte had become not only a central organizer of what had evolved into an independent, unofficial, and distinctly
+                         avant-garde salon, but he was also an important force in the avant garde movement, although his style didn't explore the effects of light. His work was more Realist,
+                          on par with early paintings by Monet, as well as the work of Gustave Courbet and Édouard Manet. He displayed work in subsequent Impressionist exhibitions, although
+                           he famously boycotted the sixth one as he had opposed the inclusion of Degas, a rivalry that underlines how fraught associations in the Impressionist circle 
+                           actually were. He participated the following year, in the seventh Impressionist exhibition, submitting 17 paintings, although there was turmoil once again as, 
+                           evidently, Caillebotte and Pissarro were at odds, a situation that Monet mediated with some success. Monet and Caillebotte both refused to participate in the final
+                            exhibition in 1886 but, by then, he had all but stopped painting completely.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/caillebotte_gustave_rainy_street.jpg">
+                        <figcaption>«Дощова вулиця, дощовий день»</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    In 1881, Caillebotte bought a house and property in Petit-Gennevilliers in the northwestern suburbs on the Seine River. He relocated there permanently in 1888. 
+                    In 1882, he threw himself into a new hobby that consumed a great deal of his time (in addition to other collecting activities and gardening): constructing yachts,
+                     which he already had experience racing. He spent the majority of his time with his brother Martial, and his good friend Renoir, who came often to visit the house
+                      in Petit-Gennevilliers and enjoyed talking over subjects like philosophy, literature, politics, and art. Caillebotte never married, although he is thought to
+                       have had a serious and long-term relationship with a woman named Charlotte Berthier. She was 11 years younger than him and apparently from a lower-class family;
+                        when he died, Caillebotte left her a large annuity.
+                </p>
+                <h3>Late Period</h3>
+                <div class="image-block">
+                    <p>
+                    By the early 1890s, Caillebotte was barely painting; he had stopped producing the large, ambitious canvases of previous decades. In 1894, at the age of 45, he was working 
+                    in the garden at his home in Petit-Gennevilliers when he collapsed, dying suddenly of a stroke. He was buried at the famous Pere Lachaise Cemetery in southeastern Paris.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/caillebotte_gustave_calfs_head_and_ox_tongue.jpg">
+                        <figcaption>«Теляча голова та бичачий язик»</figcaption>
+                    </figure>
+                </div>
+                <div class="image-block">
+                    <p>
+                    Following Caillebotte's death, his estate, in keeping with his will, attempted to make a generous donation to the French State. The artist had drafted his will very early 
+                    in his life, in 1876, following the untimely passing of his brother, Rene. His will read, "I give to the French State the paintings which I have; nevertheless, since I want 
+                    that this donation be accepted and in such a manner that the paintings go neither in an attic nor in a provincial museum, but...in the Luxembourg Museum and later in the 
+                    Louvre Museum, it is necessary that a certain time passes before execution of this clause..." He had stipulated that twenty years should pass before the paintings would be
+                     turned over by his brother Martial and the executor of his estate, Renoir.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/caillebotte_gustave_flowers.jpg">
+                        <figcaption>«Хризантеми в саду на Petit-Gennevilliers»</figcaption>
+                    </figure> 
+                </div>
+                
+                <h3>The Legacy of Gustave Caillebotte</h3>
+                <p>Caillebotte's style, which so outraged critics and academics in his day, conversely inspired artists who followed him to use some of his more radical compositional techniques.
+                     For instance, the often highly unusual perspectives - looking from below up a slanting floor, gazing down from a non-descript perch or standing on the edge of an intimate 
+                     scene - and the unconventional cropping resembling photographs were features of paintings by avant-garde artists ranging from Van Gogh to Picasso. The use of photographs
+                      to construct images became commonplace extending even to the Photorealists (also known as Hyperrealist or Super-realists) of the 1970s.
+                </p>
+                <p>
+                    He is also credited not only with influencing painters but also photographers such as Jeff Wall, whose 1982 work, Mimic, uses extreme perspectives and also emphasizes class
+                     tension as was so strongly the case with, for example, Caillebotte's Pont de l'Europe. Caillebotte's legacy as a patron is also more than noteworthy as the works he bequeathed
+                      to the French State created the foundation for the country's extensive collection of Impressionist and Post-Impressionist paintings as well as the renowned Barnes Collection
+                       in the United States.
+                </p>
             </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="bazille.html">Назад<br><span>Жан Фредерік Базиль</span></a>
+                <a id="next-page" href="cezanne.html">Вперед<br><span>Поль Сезан</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+            <ul id="source-materials">
+                <li><a href="https://www.theartstory.org/artist/caillebotte-gustave/">The art story</a></li>
+            </ul>
         </main>
         <footer>
             <ul>

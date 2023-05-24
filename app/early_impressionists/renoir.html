@@ -2,40 +2,135 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>П'єр Огюст Ренуар</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>П'єр Огюст Ренуар</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>П'єр Огюст Ренуар</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://www.biography.com/artists/camille-pissarro -->
-                <img src="../images/photos/Pierre-Auguste-Renoir.jpg" alt="The Pier August Renoir's">
-                <figcaption>
-                    П'єр Огюст Ренуар
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- taken from https://www.biography.com/artists/camille-pissarro -->
+                        <img src="../images/photos/Pierre-Auguste-Renoir.jpg" alt="The Pier August Renoir's">
+                        <figcaption>
+                            П'єр Огюст Ренуар
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Pierre-Auguste Renoir was a French Impressionist painter whose eye for beauty made him one of the movement's most popular practitioners. He is best known
+                         for his paintings of bustling Parisian modernity and leisure in the last three decades of the 19th century. Though celebrated as a colorist with a keen 
+                         eye for capturing the movement of light and shadow, Renoir started to explore Renaissance painting in the middle of his career, which led him to integrate
+                          more line and composition into his mature works and create some of his era's most timeless canvases.
+                    </p>
+                </div>
+                <h3>Childhood</h3>
+                <p>
+                    Pierre-Auguste Renoir was born into a working-class family in Limoges, a city in the central west region of France. The area is historically significant as 
+                    the center of French porcelain production, reaching that status during the 19th century. Fittingly, Renoir's first artistic job, during his teens, was as a
+                     painter in one of the town's porcelain factories. The son of a tailor and a seamstress, Renoir had a steady hand and a talent for decorative effect, which
+                      earned him praise from his employers and brought him to the attention of a growing customer base, including a number of wealthy patrons for whom he painted 
+                      picture hangings and decorations for fans and other luxury objects. These early successes fed his desire to leave the factory and pursue fine arts painting.
+                </p>
+                <h3>Early Training</h3>
+                <div class="image-block">
+                    <p>
+                        In 1862, Renoir began his formal training under Charles Gleyre, a Swiss-born academic painter who instructed a number of talented painters, among them Claude Monet,
+                        Alfred Sisley, and Frédéric Bazille, three of Renoir's future Impressionist colleagues with whom he became close friends upon entering Gleyre's Paris studio.
+                    </p>
+                    <figure >
+                        <img src="../images/canvases/renoir_pierre_auguste_dance_at_moulin_de_galette.jpg">
+                        <figcaption>Танці на Moulin de la Galette</figcaption>
+                    </figure>
+                </div>
+                
+                <p>During their training, Renoir and his new friends would venture into the scenic forest of Fontainebleau to engage in plein air painting. However, unlike Monet and 
+                    Sisley, Renoir always maintained a penchant for the studio and for painting more traditional portraiture in the style of the 18th-century French masters he so
+                     admired. Fontainebleau became a favorite painting spot of Renoir's and one he visited frequently, thanks in part to his friend Jules Le Coeur, an admirer of his 
+                     art who owned a house in Bourron-Marlotte, a commune on the forest's southern border. In 1865, Le Coeur introduced Renoir to the seventeen-year-old Lise Tréhot,
+                      who became Renoir's lover and favorite model for several years. Tréhot sat for dozens of portraits, including two in 1867: Diana the Huntress, which portrayed 
+                      her as a Greek goddess a la a Rococo portrait, and Lise with a Parasol, which was received favorably at the French Salon of 1868. Well aware of the Salon's 
+                      strict standards, Renoir executed these portraits in a conventional compositional style, combining smooth lines and meticulous coloration with a matter-of-fact 
+                      naturalism reminiscent of the Realist painter Gustave Courbet, whom he admired.
+                </p>
+                <h3>Mature period</h3>
+                <div class="image-block">
+                    <p>
+                        Immediately following the brief but tumultuous Franco-Prussian War (in which Renoir fought) and the occupation of the French Commune in 1871, Renoir's early 
+                        success began to take a turn for the worse. Rejections from the Salon far outnumbered acceptances, due in no small part to the "unfinished" quality his newer 
+                        work assumed. His fortunes reached a point where Renoir was faced with the choice of either paying models or buying paint. While others of his colleagues like
+                         Claude Monet and Camille Pissarro had ceased to do so, Renoir continued submitting work to the Salon up until 1873, holding on to the belief that acceptance 
+                         was a necessary yardstick for success. As Petra Chu notes in Nineteenth-Century European Art: "As late as 1881, the Impressionist painter Auguste Renoir wrote
+                          to his dealer [Paul] Durand-Ruel: 'In Paris, there are barely fifteen collectors capable of liking a painter without the backing of the Salon. And there are 
+                          another eighty thousand who won't buy so much as a postcard unless the painter exhibits there.'" In addition, his friendship with the Le Coeur family soured 
+                          in 1874, leaving Renoir without that source of patronage and the ability to stay in their home near Fontainebleau.
+                    </p>
+                    <figure >
+                        <img src="../images/canvases/renoir_pierre_auguste_la_grenouollere.jpg">
+                        <figcaption>Танці на La Grenouillère</figcaption>
+                    </figure>   
+                </div>
+                
+                <h3>Late Years and Death</h3>
+                <div class="image-block">
+                    <p>
+                        As the turn of the century approached, now married and with three sons (the last born in 1901), Renoir continued to produce work at an impressive rate, despite his 
+                        continually failing health. An injury to his right arm from a bicycle accident had left him with severe arthritis, and rheumatism plagued his left eye. By 1910,
+                         he was mostly relegated to a wheelchair and with bandages around his hands, making painting a great challenge. The family purchased a home in Cagnes-sur-Mer in 
+                         the south of France, which gave Renoir periodic relief from his pains with its dry and mild climate.
+                    </p>
+                    <figure >
+                        <img src="../images/canvases/renoir_pierre_auguste_umbrellas.jpg">
+                        <figcaption>Парасольки</figcaption>
+                    </figure>
+                <p>
+                    In the previous decade, Renoir had befriended the art dealer Vollard, who became both an important patron and a trusted advisor to the artist when it came to 
+                    choosing subject matter. In 1913, Vollard, well aware of Renoir's physical limitations, made the bold suggestion that he attempt sculpture, introducing him to
+                     the Catalan-born sculptor Richard Guino. Despite his physical ailments, Renoir was able to complete several successful sculptures during his collaboration with
+                      Guino, who largely worked with clay.
+                </p>
+                </div> 
+                <h3>The Legacy of Pierre-Auguste Renoir</h3>
+                <p>
+                    It could be argued that Renoir and his colleague Monet are to Impressionism as Pablo Picasso and Georges Braque are to Cubism: their experiments in painting together 
+                    created an entirely modern visual idiom and marked off the artistic territory that the movement would grow to inhabit in the following decades.
+                </p>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="pissaro.html">Назад<br><span>Каміль Піссаро</span></a>
+                <a id="next-page" href="early_impr.html">Вперед<br><span>Ранні імпресіоністи</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+            <ul id="source-materials">
+                <li><a href="https://www.theartstory.org/artist/renoir-pierre-auguste/">The art story</a></li>
+            </ul>
         </main>
         <footer>
             <ul>

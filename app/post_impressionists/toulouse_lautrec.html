@@ -2,26 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Анрі Тулуз-Лотрек</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Анрі Тулуз-Лотрек</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="../early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li>Анрі Тулуз-Лотрек</li>
@@ -29,13 +35,108 @@
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://driehausmuseum.org/blog/view/tragedy-brilliance-the-life-of-henri-de-toulouse-lautrec -->
-                <img src="../images/photos/henri-de-toulouse-lautrec.jpg" alt="The Henri de Toulouse-Lautrec's photo">
-                <figcaption>
-                    Анрі Тулуз-Лотрек
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- taken from https://driehausmuseum.org/blog/view/tragedy-brilliance-the-life-of-henri-de-toulouse-lautrec -->
+                        <img src="../images/photos/henri-de-toulouse-lautrec.jpg" alt="The Henri de Toulouse-Lautrec's photo">
+                        <figcaption>
+                            Анрі Тулуз-Лотрек
+                        </figcaption>
+                    </figure>  
+                    <p>
+                        Henri de Toulouse-Lautrec was a 19th-century French painter, illustrator and poster artist, known for his atmospheric depiction of the Parisian underworld.
+                        Besides his work as an artist, his height (only 152 cm), and scandalous behaviour in society brought him notoriety. He is one of the most famous 
+                        post-impressionist painters of the era, whose style was also influenced by Art Nouveau, and the topics he focused on centred around the bohemian life on the 
+                        streets, in brothels, theatres and bars in Paris. Although he died young and his whole career lasted less than 20 years, he managed to produce a great number 
+                        of for the time modern, provocative and decadent images that give us a real picture of what Parisian nightlife was like at the end of the 19th century.
+                    </p>  
+                </div>
+                <h3>Childhood and education</h3>
+                <div class="image-block">
+                    <p>
+                        Toulouse-Lautrec’s family was wealthy and had a lineage that extended without interruption back to the time of Charlemagne. He grew up amid his family's typically 
+                        aristocratic love of sport and art. Most of the boy’s time was spent at the Château du Bosc, one of the family estates located near Albi. Henri's grandfather, 
+                        father, and uncle were all talented draftsmen, and thus it was hardly surprising that Henri began sketching at the age of 10. His interest in art grew as a 
+                        result of his being incapacitated in 1878 by an accident in which he broke his left thighbone. His right thighbone was fractured a little more than a year later
+                         in a second mishap. These accidents, requiring extensive periods of convalescence and often painful treatments, left his legs atrophied and made walking most 
+                         difficult. As a result, Toulouse-Lautrec devoted ever greater periods to art in order to pass away the frequently lonely hours.
+                    </p>
+                    <p>
+                        Toulouse-Lautrec’s first visit to Paris occurred in 1872, when he enrolled in the Lycée Fontanes (now Lycée Condorcet). He gradually moved on to private tutors, 
+                        and it was only after he had passed the baccalaureate examinations, in 1881, that he resolved to become an artist.
+
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/Toulouse-Lautrec_Vincent-van-Gogh.jpg">
+                        <figcaption>Портрет Вінсента ван Гога</figcaption>
+                    </figure>
+                </div>
+                <p>
+                    His first professional teacher in painting was René Princeteau, a friend of the Lautrec family. Princeteau’s fame, such as it was, arose from his depiction of 
+                    military and equestrian subjects, done in a 19th-century academic style. Though Toulouse-Lautrec got on well with Princeteau, he moved on to the atelier of Léon
+                     Bonnat at the end of 1882. In Bonnat, Toulouse-Lautrec encountered an artist who fought vehemently against deviation from academic rules, condemned the slapdash
+                      approach of the Impressionists, and judged Toulouse-Lautrec’s drawing “atrocious.” His work received a more positive reaction in 1883, when he joined the studio
+                       of Fernand Cormon.
+                </p>
+                <h3>The documenter of Montmartre</h3>
+                <div class="image-block">
+                    <figure>
+                        <img src="../images/canvases/Toulouse-Lautrec_theatre.jpg">
+                        <figcaption>Жінка-клоун Cha-U-Kao на Мулен-Руж</figcaption>
+                    </figure>
+                    <p>
+                        Thus it was that in the mid-1880s Toulouse-Lautrec began his lifelong association with the bohemian life of Montmartre. The cafés, cabarets, entertainers, and 
+                        artists of this area of Paris fascinated him and led to his first taste of public recognition. He focused his attention on depicting popular entertainers such
+                         as Aristide Bruant, Jane Avril, Loie Fuller, May Belfort, May Milton, Valentin le Désossé, Louise Weber (known as La Goulue [“the Glutton”]), and clowns such
+                          as Cha-U-Kao and Chocolat.
+                    </p>
+                </div>
+                    
+                <div class="image-block">
+                    <figure>
+                        <img src="../images/canvases/Toulouse-Lautrec_Self-portrait-in-the-crowd-background.jpg">
+                        <figcaption>на Мулен-Руж</figcaption>
+                    </figure>
+                    <p>
+                        The originality of Toulouse-Lautrec also emerged in his posters. Rejecting the notion of high art, done in the traditional medium of oil on canvas, Toulouse-Lautrec 
+                        in 1891 did his first poster, Moulin Rouge—La Goulue. This poster won Toulouse-Lautrec increasing fame. “My poster is pasted today on the walls of Paris,” the artist 
+                        proudly declared. It was one of more than 30 he would create in the 10 years before his death. Posters afforded Toulouse-Lautrec the possibility of a widespread impact 
+                        for his art, no longer restricted by the limitations of easel painting. They also enhanced the success he had enjoyed in the preceding year when his works were shown in 
+                        Brussels at the Exposition des XX (the Twenty), an avant-garde association, and in Paris at the Salon des Indépendants.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/toulouse_lautrec_henri_poster.jpg">
+                        <figcaption>постер з Жанною Авріль</figcaption>
+                    </figure>
+                </div>
+                <h3>The Legacy of Henri de Toulouse-Lautrec</h3>
+                <p>
+                    Toulouse-Lautrec's career coincided with the expansion of the urban middle class - people with money to spend on entertainment, but who weren't part of high society. 
+                    He anticipated and shaped the needs of this audience and his style began to make an impact during his lifetime, inspiring the exaggerated outlines, languid, organic forms
+                     and script writing that appeared in the Art Nouveau movement.
+                </p>
+                <p>
+                    Toulouse-Lautrec's celebration of consumer culture and iconic popular advertisements paved the way for Pop art. 
+                </p>
+                <p>
+                    One further aspect of Toulouse-Lautrec's achievement deserves special attention. Despite the celebrated freedom and individualism of modern art, few artists of any
+                     period have been able to overcome social prejudice. While rubbing elbows with the riffraff was an acceptable, even encouraged, rite-of-passage among avant-garde 
+                     artists, Degas, Manet, and Van Gogh maintained a certain aloofness from their working-class subjects. Toulouse-Lautrec was able to develop true friendships that 
+                     transcended the rigid class structure of 19th-century Paris. His brilliant insights into the glitter and desperation of Paris nightlife, a study in contrasts, 
+                     were not only more brilliant but more humane than any that had come before him, setting the bar high for future artists.
+
+                </p>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="gauguin.html">Назад<br><span>Поль Гоген</span></a>
+                <a id="next-page" href="post_impr.html">Вперед<br><span>Пост-імпресіоністи</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+                <ul id="source-materials">
+                    <li><a href="https://www.britannica.com/biography/Henri-de-Toulouse-Lautrec">Britannica</a></li>
+                    <li><a href="https://www.theartstory.org/artist/toulouse-lautrec-henri/">The art story</a></li>
+                </ul>
         </main>
         <footer>
             <ul>

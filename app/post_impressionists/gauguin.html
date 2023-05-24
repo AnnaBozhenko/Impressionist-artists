@@ -2,26 +2,32 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Поль Гоген</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Поль Гоген</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="../early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="post_impr.html">Пост-імпресіоністи</a></li>
                     <li>Поль Гоген</li>
@@ -29,13 +35,139 @@
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- Taken from https://www.gauguin.org/ -->
-                <img src="../images/photos/paul_gauguin.jpg" alt="The Paul Gauguin's photo">
-                <figcaption>
-                    Поль Гоген
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                        <!-- Taken from https://www.gauguin.org/ -->
+                        <img src="../images/photos/paul_gauguin.jpg" alt="The Paul Gauguin's photo">
+                        <figcaption>Поль Гоген</figcaption>
+                    </figure>
+                <p>
+                    Paul Gauguin is one of the most significant French artists to be initially schooled in Impressionism, but who broke
+                     away from its fascination with the everyday world to pioneer a new style of painting broadly referred to as Symbolism.
+                      As the Impressionist movement was culminating in the late 1880s, Gauguin experimented with new color theories and 
+                      semi-decorative approaches to painting. He famously worked one summer in an intensely colorful style alongside Vincent
+                       Van Gogh in the south of France, before turning his back entirely on Western society. He had already abandoned a former 
+                       life as a stockbroker by the time he began traveling regularly to the south Pacific in the early 1890s, where he developed
+                        a new style that married everyday observation with mystical symbolism, a style strongly influenced by the popular, 
+                        so-called "primitive" arts of Africa, Asia, and French Polynesia. Gauguin's rejection of his European family, society, 
+                        and the Paris art world for a life apart, in the land of the "Other," has come to serve as a romantic example of the
+                         artist-as-wandering-mystic.
+                </p>    
+                </div>
+                <h3>Childhood</h3>
+                <p>
+                    Paul Gauguin was born to Clovis Gauguin, a journalist, and Alina Maria Chazal, daughter of the socialist leader and early feminist 
+                    activist Flora Tristan. At the age of three, Gauguin and his family fled Paris for Lima, Peru, a move motivated by France's tenuous 
+                    political climate that prohibited freedom of the press. On the trans-Atlantic journey, Clovis fell ill and died. For the next four 
+                    years, Gauguin, his sister, and mother lived with extended relatives in Lima.
+                </p>
+                <div class="image-block">
+                    <p>
+                        In 1855, as France entered upon a more politically stable era, the surviving family returned to settle in the north-central French
+                         city of Orleans, where they lived with Gauguin's grandfather. There, Gauguin began his formal education and eventually joined the 
+                         merchant marine (compulsory service) at age seventeen. Three years later Gauguin joined the French Navy. Returning to Paris in 1872, 
+                         Gauguin took up work as a stockbroker.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/gauguin_paul_4_breton_girls.jpg">
+                        <figcaption>Чотири бретонських дівчат</figcaption>
+                    </figure>
+                </div>
+                <h3>Early training</h3>
+                <div class="image-block">
+                    <p>
+                    Following his mother's death in 1867, Gauguin went to live with his appointed guardian, Gustave Arosa, a wealthy art patron and collector. 
+                    Under Arosa's care, Gauguin was introduced to the work of the Romantic painter, Eugene Delacroix, as well as the work of Realist painter 
+                    Gustave Courbet, Jean-Baptiste-Camille Corot, and the pre-Impressionist, Barbizon school of French landscape painting. This education of 
+                    the artist's eye in the work of his close predecessors was to have a lasting effect on Gauguin's later work.
+                </p>
+                <figure>
+                    <img src="../images/canvases/gauguin_paul_self_portrait_les_miserables.jpg">
+                    <figcaption>Автопортрет</figcaption>
+                </figure>
+                </div>
+                <p>
+                    Gauguin married Mette-Sophie Gad in 1873; subsequently, Gauguin, his Danish wife, and their five children moved from Paris to Copenhagen. 
+                    Gauguin also began to collect art, procuring a modest array of Impressionist paintings by Pierre-Auguste Renoir, Claude Monet, and Camille 
+                    Pissarro. By 1880 Gauguin was himself painting in his spare time and employing an Impressionist style, as in his Still-Life with Fruit and 
+                    Lemons (1880). Gauguin also took to frequently visiting galleries, and eventually he rented his own artist's studio. In addition, Gauguin
+                     painted beside newly befriended artists Camille Pissarro and Paul Cézanne, and he himself participated in the official Impressionist exhibitions 
+                     in Paris of 1881 and 1882.
+                </p>
+                <h3>Mature Period</h3>
+                <div class="image-block">
+                    <p>
+                    By the late 1880s, Gauguin's work caught the attention of Vincent van Gogh, another young and gifted painter who, like Gauguin, frequently suffered 
+                    from bouts of depression. Similarly to Gauguin's, van Gogh's painting - while distinctly Impressionistic - showed the potential to blossom into 
+                    something entirely new. The two artists began a regular correspondence, during which they exchanged paintings, including self-portraits, among
+                     them Gauguin's Self-Portrait 'Les Miserables' (1888). In 1888, at van Gogh's invitation, the two men lived and worked together for nine weeks
+                      in van Gogh's rented house at Arles in the south of France. Van Gogh's brother and benefactor, Theo van Gogh, an art dealer by profession, 
+                      served as Gauguin's primary business manager and artistic confident at the time.
+                </p>
+                <figure>
+                    <img src="../images/canvases/gauguin_paul_vision_after_the_sermon.jpg">
+                    <figcaption>Бачення після проповіді</figcaption>
+                </figure>
+                </div>
+                <p>
+                    During these nine weeks, both artists turned out an impressive number of canvases, among Gauguin's his now-famous Night Café at Arles (Mme Ginoux)
+                     and a signature early work, Vision After the Sermon (Jacob's Fight with the Angel) (both 1888). Neither man had a particularly promising reputation
+                      in the art world at this moment; rather, both were regarded as highly experimental painters searching for a new style that might depart from the 
+                      mature Impressionism of Monet, Renoir, and Pissarro. The intensity of the artistic exchange would come to a dramatic conclusion as, by the end of 
+                      nine weeks, van Gogh's depressive and occasionally violent emotional episodes led to the dissolution of their artistic partnership, although the 
+                      two would forever admire each other's work.
+                </p>
+                <h3>Late period</h3>
+                <p>
+                    In 1891, after spending years away from his wife and children, Gauguin effectively abandoned his family by moving alone, like a perpetual, solitary 
+                    wanderer, to French Polynesia, where he would remain for the rest of his days. This move was the culmination of Gauguin's increasing desire to escape
+                     what he regarded as an artificial European culture for a life in a more "natural" condition
+                </p>
+                <div class="image-block">
+                    <p>
+                    In his final decade, Gauguin lived in Tahiti, and subsequently Punaauia, finally making his way to the Marquesas Islands. During this time he 
+                    painted more traditional portraits, such as Tahitian Women on the Beach (1891), The Moon and the Earth (Hina tefatou) (1893), and Two Tahitian 
+                    Women (1899). He also continued to experiment with quasi-religious and Symbolist subject matter, as in his Manao Tupapau (The Spirit of the Dead
+                     Keeps Watch) (1892), and his Where Do We Come From? What Are We? Where Are We Going? (1897). These works were painted during a period in which 
+                     Gauguin was essentially bidding his career adieu, as if he were an athlete "at the top of his game," so to speak, but wanting to aspire towards
+                      a more spiritual condition. Seeking an unworldly sense of repose and detachment, he is said to have been obsessed with his own mortality. He
+                       looked back on his life and even borrowed figures from his own earlier paintings, perhaps as though to symbolically lend them an extended 
+                       lifespan. Notably, by 1899 Gauguin was referring to himself satirically, writing to a Paris colleague that he painted only "on Sundays and
+                        holidays," ironically like the amateur he once embodied prior to pursuing art seriously. Not long after that self-deprecating quip, he 
+                        unsuccessfully attempted suicide by self-poisoning.
+                </p>
+                <figure>
+                    <img src="../images/canvases/gauguin_paul_2_tahitian_women.jpg">
+                    <figcaption>Дві жінки з острова Таїті</figcaption>
+                </figure>
+                <p>In early May, 1903, morally skittish, and weakened by drug-addiction and regular bouts with illness, Gauguin succumbed to the degenerative effects
+                     of syphilis and died at the age of 54, in the Marquesas islands, where he was subsequently buried.
+                </p>
+                </div>
+                
+                <h3>The Legacy of Paul Gauguin</h3>
+                <p>
+                    Gauguin's naturalistic forms and "primitive" subject matter would embolden an entire, younger generation of painters to move decisively away from 
+                    late Impressionism and pursue more abstract, or poetically inclined subjects, some inspired by French Symbolist poetry, others derived from myth, 
+                    ancient history, and non-Western cultural traditions for motifs with which they might refer to the more spiritual and supernatural aspects of human
+                     experience. Gauguin ultimately proved extremely influential to 20th-century modern art, in particular that of Pablo Picasso and Georges Braque and 
+                     their development of Cubism from about 1911 to 1915. Likewise, Gauguin's endorsement of bold color palettes would have a direct effect on the Fauvists, 
+                     most notably André Derain and Henri Matisse, both of whom would frequently employ intensely resonant, emotionally expressive, and otherwise "un-realistic" color.
+                </p>
+                <p>
+                    Gauguin, the man, became a legend almost independently of his art and came to inspire a number of literary works based on his "exotic" life story - 
+                    a prime example being W. Somerset Maugham's The Moon and Sixpence (1919).
+                </p>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="serat.html">Назад<br><span>Жорж Сьора</span></a>
+                <a id="next-page" href="toulouse_lautrec.html">Вперед<br><span>Анрі Тулуз-Лотрек</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+                <ul id="source-materials">
+                    <li><a href="https://www.theartstory.org/artist/gauguin-paul/">The art story</a></li>
+                </ul>
         </main>
         <footer>
             <ul>

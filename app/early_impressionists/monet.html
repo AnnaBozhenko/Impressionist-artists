@@ -2,65 +2,114 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Клод Моне</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Клод Моне</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>Клод Моне</li>
                 </ul>
             </nav>
         </header>
             <main>
-                <figure>
-                    <!-- taken from https://www.claude-monet.com/ -->
-                    <img src="../images/photos/claude-monet.jpg" alt="The Claude Monet's photo">
-                    <figcaption>Claude Monet</figcaption>
-                </figure>
-                <article> Якщо порівняти картини Клода Моне з музикою, то нагадує Дебюссі, лиш послухайте Arabesque:
-                    <br><br><audio src="../audios/debussy_arabesque.mp3" type="audio/mp3" controls></audio>
-                    <p>Мабуть, імпресіонізм найчастіше викликає асоціацію зі Impression, Сходом сонця, сюжет відтворений в порту Гавру. Цю картину художник виставив разом з творами Каміля Піссаро, Альфреда Сіслея, Едуарда Мане, Поля Сезана, Едгара Дега та деякими іншими митцями. На той час, відвідувачі виставки не втямили цінності полотен нового жанру, насміхалися над творами, жартували навіть, що не можуть розібрати сюжет картин. Тогочасний критик, Луї Леро написав статтю-відгук в газеті Le Charivari, у якій використав термін "Враження" у заголовку, відсилаючись до назви картини. Хоча стаття роз*бала вщент художників, виставивши їх до того ж дурнями, породженими від сластолюбивих матерів, а проте група художників, зокрема Дега та Ренуар були щасливими, що їх прозвали імпресіоністами. </p>
-                    <p>Часто, щоб зрозуміти, що з себе представляє людина, діяч, ми шукаємо його думки, позиції. Я надибала дрібку цитат Клода Моне. Можливо, вони вас розважать або ж ви, прочитавши їх, знайдете однодумця.</p>
+                <article>
+                    <div id="artist-intro">
+                        <figure>
+                            <!-- taken from https://www.claude-monet.com/ -->
+                            <img src="../images/photos/claude-monet.jpg" alt="The Claude Monet's photo">
+                            <figcaption>Claude Monet</figcaption>
+                        </figure>
+                        <p>
+                            Claude Monet was the leader of the French Impressionist movement, literally giving the movement its name. As an inspirational talent and personality, 
+                            he was crucial in bringing its adherents together. Interested in painting in the open air and capturing natural light, Monet would later bring the 
+                            technique to one of its most famous pinnacles with his series paintings, in which his observations of the same subject, viewed at various times of the 
+                            day, were captured in numerous sequences. Masterful as a colorist and as a painter of light and atmosphere, his later work often achieved a remarkable
+                             degree of abstraction, and this has recommended him to subsequent generations of abstract painters.
+                        </p>
+                    </div>
+                    <p>Мабуть, імпресіонізм найчастіше викликає асоціацію зі Impression, Сходом сонця, сюжет відтворений в порту Гавру. Цю картину художник виставив разом з творами Каміля Піссаро, 
+                        Альфреда Сіслея, Едуарда Мане, Поля Сезана, Едгара Дега та деякими іншими митцями. На той час, відвідувачі виставки не втямили цінності полотен нового жанру, насміхалися 
+                        над творами, жартували навіть, що не можуть розібрати сюжет картин. Тогочасний критик, Луї Леро написав статтю-відгук в газеті Le Charivari, у якій використав термін 
+                        "Враження" у заголовку, відсилаючись до назви картини. Хоча стаття розкритикувала вщент художників, виставивши їх до того ж дурнями,
+                        проте група художників, зокрема Дега та Ренуар були щасливими, що їх прозвали імпресіоністами. 
+                    </p>
+                    <p>Дрібка цитат Клода Моне. Можливо, вони вас розважать або ж ви, прочитавши їх, знайдете однодумця:</p>
                     <blockquote cite="https://www.claude-monet.com/quotes.jsp">The noblest pleasure is the joy of understanding.</blockquote>
                     <blockquote cite="https://www.claude-monet.com/quotes.jsp">No one is an artist unless he carries his picture in his head before painting it, and is sure of his method and composition.</blockquote>
                     <blockquote cite="https://www.claude-monet.com/quotes.jsp">No one but myself knows the anxiety I go through and the trouble I give myself to finish paintings which do not satisfy me and seem to please so very few others.</blockquote>                   
-                    <p>З відкриттям Японії своїх портів, прибульці, надокучливі європеці з жадібністю купували все східне, японське. Клод Моне виявився не винятком. Він мав слабкість до японської каліграфії. Хоч наступна картина не про письмо, але все ж погляньте на цю європейську красуню, що безтурботним, ненав'язливим поглядом дивиться на вас.</p>
-                    <img src="../images/canvases/claude_monet_la-japonaise.jpg" alt="La Japonaise canvas by Monet">
-                    <figcaption>La Japonaise</figcaption>
-                    <p>Моне також був у Великій Британії, виконав серію картин з парламентом, на березі Темзи та мостом Ватерлоо. Але постійна туманна погода Лондона навіювала неприємні imppresions на Моне, про що він навіть писав у листах до дружини.</p>
-                    <img src="../images/canvases/claude_monet_parliament-at-sunset.jpg" alt="the Houses of Parliament in London, by Monet">
-                    <figcaption>Будинок парламенту у Лондоні</figcaption>
-                    <p>Після повернення з Великої Британії, художник написав картину з маковим полем. Жінка, зображена на полотні, ймовірно Каміль, Дружина Моне, а дитина - його син, Жуан. </p>
-                    <img src="../images/canvases/claude_monet_poppies.jpg" alt="Poppies by Monet">
-                    <figcaption>Макове поле</figcaption>
-                    <p>Однією з улюблених тем для Моне - тополі. Так само як і з копицями сіна, Моне створив серію полотен, експерементуючи з тінями, залежно від проміжку доби.</p>
-                    <img src="../images/canvases/claude_monet_poplars_at_giverny_sunrise.jpg" alt="the poplars at giverny sunrise by Monet">
-                    <figcaption>Тополі в Живерні на сході сонця</figcaption>
-                    <p>Руанський собор - неодноразова тема картин художника. І знову ж таки, акценти на тінях, наступна картина - створена в найулюбленішу добу імпресіоніста.</p>
-                    <img src="../images/canvases/claude_monet_rouen_cathedral.jpg" alt="Rouen cathedral by Monet">
-                    <figcaption>Руанський собор на світанку</figcaption>
-                    <p>Gracefully спи**ені матеріали з:</p>
-                    <ul>
-                        <li><a href="https://www.claude-monet.com">Веб-сайт присвячений <del>батяру</del> митцю Клоду Моне</a></li>
-                    </ul>
+                    <p>Порівняйте сюжети на картинах Моне з Arabesque Дебюссі:</p>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GVm5ZsuIPGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="image-block">
+                        <p>З відкриттям Японії своїх портів, прибульці, надокучливі європеці з жадібністю купували все східне, японське. Клод Моне виявився не винятком. Він мав слабкість до японської каліграфії та живопису <a href="../art_dictionary.html#ukiyoe">Ukiyo-e</a>.</p>
+                        <figure>
+                            <img src="../images/canvases/claude_monet_la-japonaise.jpg" alt="La Japonaise canvas by Monet">
+                            <figcaption>La Japonaise</figcaption>
+                        </figure>
+                    </div>
+                    <div class="image-block">
+                        <p>Моне також був у Великій Британії, виконав серію картин з парламентом, на березі Темзи та мостом Ватерлоо. Але постійна туманна погода Лондона навіювала неприємні impressions на Моне, 
+                        про що він навіть писав у листах до дружини.</p>
+                        <figure>
+                            <img src="../images/canvases/claude_monet_parliament-at-sunset.jpg" alt="the Houses of Parliament in London, by Monet">
+                            <figcaption>Будинок парламенту у Лондоні</figcaption>
+                        </figure>
+                    </div>
+                    <div class="image-block">
+                        <p>Після повернення з Великої Британії, художник написав картину з маковим полем. Жінка та дитина, зображені на передньому плані, ймовірно Каміль, дружина Моне, та його син, Жуан. </p>
+                        <figure>
+                            <img src="../images/canvases/claude_monet_poppies.jpg" alt="Poppies by Monet">
+                            <figcaption>Макове поле</figcaption>
+                        </figure>
+                    </div>
+                    <div class="image-block">
+                        <p>Однією з улюблених тем для Моне - тополі. Так само як і з копицями сіна, Моне створив серію полотен, експерементуючи з тінями, залежно від періоду доби.</p>
+                        <figure>
+                            <img src="../images/canvases/claude_monet_poplars_at_giverny_sunrise.jpg" alt="the poplars at giverny sunrise by Monet">
+                            <figcaption>Тополі в Живерні на сході сонця</figcaption>
+                        </figure>
+                    </div>
+                    <div class="image-block">
+                        <p>Руанський собор - неодноразова тема картин художника. І знову ж таки, акценти на тінях, картина створена в найулюбленішу добу імпресіоніста.</p>
+                        <figure>
+                            <img src="../images/canvases/claude_monet_rouen_cathedral.jpg" alt="Rouen cathedral by Monet">
+                            <figcaption>Руанський собор на світанку</figcaption>
+                        </figure>
+                    </div>
                 </article>
+                <nav id="navigation_between_pages">
+                    <a id="prev-page" href="early_impr.html">Назад<br><span>Ранні імпресіоністи</span></a>
+                    <a id="next-page" href="bazille.html">Вперед<br><span>Жан Фредеріе Базиль</span></a>
+                </nav>
+                <h3>Матеріали взято з:</h3>
+                <ul id="source-materials">
+                    <li><a href="https://www.claude-monet.com">Веб-сайт</a>, присвячений паризькому <del>батяру</del> митцю Клоду Моне</li>
+                    <li><a href="https://www.theartstory.org/artist/monet-claude/">The art story</a></li>
+                </ul>
             </main>
             <footer>
                 <ul>

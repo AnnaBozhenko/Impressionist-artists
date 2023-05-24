@@ -2,40 +2,125 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Поль Сезан</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../artists.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
+            <div id="heading">
                 <h1>Поль Сезан</h1>
-                <a href="../user/authorise.html">вхід</a>
+                <a href="../user/authorise.html">увійти</a>
             </div>
-            <nav >
-                <ul class="navigation-bar">
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="../post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="../art_gallery.html">Арт-галерея</a></li>
                     <li><a href="../art_dictionary.html">Арт-словник</a></li>
-                    <li><a href="../user/user.html">Користувачу</a></li>
+                    <li><a href="../user/user.html">Для користувача</a></li>
                     <li><a href="../index.html">Головна</a></li>
                     <li><a href="../about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="../index.html">Головна</a></li>
-                    <li><a href="early_impr.html">Ранні імпресіоністи</a></li>
+                    <li><a href="early_impr.html">Пост-імпресіоністи</a></li>
                     <li>Поль Сезан</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <figure>
-                <!-- taken from https://www.worldhistory.org/Paul_Cezanne/ -->
-                <img src="../images/canvases/paul_cezanne.jpeg" alt="The Paul Cézanne's portrait">
-                <figcaption>
-                    Поль Сезан
-                </figcaption>
-            </figure>
+            <article>
+                <div id="artist-intro">
+                    <figure>
+                    <!-- taken from https://www.worldhistory.org/Paul_Cezanne/ -->
+                        <img src="../images/canvases/paul_cezanne.jpeg" alt="The Paul Cézanne's portrait">
+                        <figcaption>Поль Сезан</figcaption>
+                    </figure> 
+                    <p>
+                        Paul Cézanne was the preeminent French artist of the Post-Impressionist era, widely appreciated toward the end of his life for insisting that 
+                        painting stay in touch with its material, virtually sculptural origins. Also known as the "Master of Aix" after his ancestral home in the South
+                         of France, Cézanne is credited with paving the way for the emergence of twentieth-century modernism, both visually and conceptually. In retrospect,
+                          his work constitutes the most powerful and essential link between the ephemeral aspects of Impressionism and the more materialist, artistic 
+                          movements of Fauvism, Cubism, Expressionism, and even complete abstraction.
+                    </p>
+                </div>
+                <h3>Childhood</h3>
+                <div class="image-block">
+                    <p>
+                        Paul Cézanne was born in 1839 in the town of Aix-en-Provence in the South of France. His father was a wealthy lawyer and banker who strongly encouraged Paul 
+                        to follow in his footsteps. Cézanne's eventual rejection of his authoritative father's aspirations led to a long, problematic relationship between the two, 
+                        although, notably, the artist remained financially dependent on his family until his father's death in 1886.
+                    </p>
+                    <p> He was extremely close friends with Émile Zola, a writer born in Aix as well, and who would later become one of the greatest literary figures of his generation. 
+                        The adventurous were part of a small circle that called themselves "The Inseperables". They moved to Paris together in 1861.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/cezanne_paul_the_bay_of_marseille.jpg">
+                        <figcaption> «Марсельська бухта»</figcaption>
+                    </figure>
+                </div>
+                
+                <h3>Early training</h3>
+                <p>
+                    Cézanne was largely a self-taught artist. In 1859, he attended evening drawing classes in his native town of Aix. After moving to Paris, Cézanne twice attempted 
+                    to enter the École des Beaux-Arts, but was turned down by the jury. Instead of acquiring professional training, Cézanne made frequent visits to the Musée de Louvre,
+                     where he copied works by Titian, Rubens, and Michelangelo. He also regularly visited the Académie Suisse, a studio where young art students could draw from the
+                     
+                     live model for a very modest monthly membership fee. While at the Académie, Cézanne met fellow painters Camille Pissarro, Claude Monet, and Auguste Renoir, who 
+                     were at that time also struggling artists, but who would soon comprise the founding members of the nascent Impressionist movement.
+                </p>
+                <p>
+                    The early oils of Cézanne were executed in a rather somber palette. The paint was often applied in thick layers of impasto, adding a sense of heaviness to already 
+                    solemn compositions. His early painting indicated a focus on color in favor of well-delineated silhouettes and perspectives preferred by the French Academy and 
+                    the jury of the annual Salon where he continuously submitted his works. All of his submissions, however, were refused. The artist also travelled regularly back to
+                     Aix to secure funding from his disapproving father.
+                </p>
+                <h3>Mature period</h3>
+                <div class="image-block">
+                    <p>Cézanne's experience with painting from nature and rigourous experimentation led him to develop his own approaches to art. He strove to depart from the portrayal 
+                    of the transient moment, long favored by the Impressionists; instead, Cézanne sought true and permanent pictorial qualities of objects around him. According to
+                     Cézanne, the subject of the painting was first to be "read" by the artist through the understanding of its essence. Then, in the second stage, this essence must 
+                     be "realized" on a canvas through forms, colors, and their spatial relations. The colors and forms thus became the dominant elements of his compositions, completely
+                      freed from the rigid rules of perspective and paint application as promoted by the Academy.
+                    </p>
+                    <figure >
+                        <img src="../images/canvases/cezanne_paul_the_artists_father.jpg">
+                        <figcaption> «Луї-Огюст Сезан за читанням газети <q>L'Evenement</q>» (Батько художника)</figcaption>
+                    </figure>
+                    <figure >
+                        <img src="../images/canvases/cezanne_paul_the_card_players.jpg">
+                        <figcaption> «Гравці в карти» </figcaption>
+                    </figure>
+                </div>
+                <h3>The Legacy of Paul Cézanne</h3>
+                <div class="image-block">
+                    <p>When looking at Cézanne's late work, it is impossible to miss the emergence of a unique artistic approach. Cézanne offered a new way of comprehending the world 
+                    through art. With his reputation evolving steadily in the late years of his life, an increasing number of young artists fell under the influence of his innovative
+                     vision. Among them was the young Pablo Picasso, who would soon steer the Western tradition of painting into yet another new and utterly unprecedented direction. 
+                     It was Cézanne who taught the new generation of artists to liberate form from color in their art, thus creating a new and subjective pictorial reality, not merely
+                      a slavish imitation. The influence of Cézanne continued well into the 1930s and 1940s, when a new artistic manner was coming to fruition - that of Abstract 
+                      Expressionism.
+                    </p>
+                    <figure>
+                        <img src="../images/canvases/cezanne_paul_mont_sainte_victoire.jpg">
+                        <figcaption> «Гора Сент-Віктор» </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <nav id="navigation_between_pages">
+                <a id="prev-page" href="cailleboitte.html">Назад<br><span>Густав Кайбот</span></a>
+                <a id="next-page" href="degas.html">Вперед<br><span>Едгар Дега</span></a>
+            </nav>
+            <h3>Матеріали взято з:</h3>
+            <ul id="source-materials">
+                <li><a href="https://www.theartstory.org/artist/cezanne-paul/">The art story</a></li>
+            </ul>
         </main>
         <footer>
             <ul>

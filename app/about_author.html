@@ -2,17 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Про автора</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="info_pages.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
-                <h1>Про автора</h1>
-                <a href="user/authorise.html">вхід</a>
+            <div id="heading">
+                <h1>Французькі художники-імпресіоністи</h1>
+                <a href="user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="art_gallery.html">Арт-галерея</a></li>
@@ -21,13 +27,73 @@
                     <li><a href="index.html">Головна</a></li>
                     <li>Про автора</li>
                 </ul>
-                <ul class="navigation-path">
+                <ul id="path-navigation">
                     <li><a href="index.html">Головна</a></li>
                     <li>Про автора</li>
                 </ul>
             </nav>
         </header>
         <main>
+            <article>
+                <p>Вітаю на сайті про французьких художників імпресіоністів! Я Анна, схиблена на картинах та архітектурі. Найкращим описом послужать мої інтерпретації настроїв деяких картин.</p>
+                <table>
+                    <caption>Таблиця настроїв</caption>
+                    <thead>
+                        <tr>
+                            <th>Настрій</th>
+                            <th>Картина</th>
+                            <th>Автор</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>інфантильність</td>
+                            <td><a href="art_gallery.html#children-at-the-basin"  target="_blank">Діти у ванній</a></td>
+                            <td>Берта Морізо</td>
+                        </tr>
+                        <tr>
+                            <td>треба переробити</td>
+                            <td><a href="art_gallery.html#floor-scrapers"  target="_blank">Шліфувальники підлоги</a></td>
+                            <td>Кайбот</td>
+                        </tr>
+                        <tr>
+                            <td>хочу подрімати</td>
+                            <td><a href="https://www.wikiart.org/en/gustave-caillebotte/the-nap#:~:text=VIEW%20ALL%20SIZES-,The%20Nap,-Gustave%20Caillebotte"  target="_blank">Дрімота</a></td>
+                            <td>Кайбот</td>
+                        </tr>
+                        <tr>
+                            <td>замріяність</td>
+                            <td><a href="https://www.wikiart.org/en/pierre-auguste-renoir/jeanne-samary-in-a-low-necked-dress-1877#:~:text=VIEW%20ALL%20SIZES-,Jeanne%20Samary%20in%20a%20Low%20Necked%20Dress,-Pierre%2DAuguste%20Renoir"  target="_blank">портрет Жанни Сомарі</a></td>
+                            <td>Ренуар</td>
+                        </tr>
+                        <tr>
+                            <td>задуманість</td>
+                            <td><a href="art_gallery.html#julie-daydreaming"  target="_blank">Жюлі, денні мрії</a></td>
+                            <td>Морізо</td>
+                        </tr>
+                        <tr>
+                            <td>в дорогу</td>
+                            <td><a href="https://www.wikiart.org/en/berthe-morisot/boats-entry-to-the-medina-in-the-isle-of-wight#:~:text=VIEW%20ALL%20SIZES-,Boats%20%2D%20Entry%20to%20the%20Medina%20in%20the%20Isle%20of%20Wight,-Berthe%20Morisot"  target="_blank">Човни на вході до Медіни</a></td>
+                            <td>Mорізо</td>
+                        </tr>
+                        <tr>
+                            <td>щось га́ряче</td>
+                            <td><a href="https://www.wikiart.org/en/claude-monet/house-of-parliament-sun#:~:text=VIEW%20ALL%20SIZES-,House%20of%20Parliament%20Sun,-Claude%20Monet"  target="_blank">Дім парламенту, Сонце</a></td>
+                            <td>Моне</td>
+                        </tr>
+                        <tr>
+                            <td>самота (коли добре)</td>
+                            <td><a href="https://www.wikiart.org/en/claude-monet/haystack#:~:text=VIEW%20ALL%20SIZES-,Haystack,-Claude%20Monet" target="_blank">копиці сіна</a></td>
+                            <td>Моне</td>
+                        </tr>
+                        <tr>
+                            <td>самота (коли погано)</td>
+                            <td><a href="https://www.wikiart.org/en/claude-monet/meditation-madame-monet-sitting-on-a-sofa-1871#:~:text=VIEW%20ALL%20SIZES-,Meditation%2C%20Madame%20Monet%20Sitting%20on%20a%20Sofa,-Claude%20Monet">Медитації мадам Моне, сидячи на дивані</a></td>
+                            <td>Моне</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </main>
         <footer>
             <ul>

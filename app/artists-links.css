@@ -40,7 +40,6 @@ section#artists img.scale-bigger {
 
 section#artists figcaption {
   height: 10%;
-  text-align: center;
   font-family: "Book Antiqua";
   font-size: 1em;
   color: white;
@@ -48,4 +47,3 @@ section#artists figcaption {
   padding: 3% 1%;
   z-index: 1;
 }
-

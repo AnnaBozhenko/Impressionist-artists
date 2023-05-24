@@ -2,17 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Арт-словник</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header>
-            <div class="pre-navigation">
-                <h1>Арт-словник</h1>
-                <a href="user/authorise.html">вхід</a>
+            <div id="heading">
+                <h1>Французькі художники-імпресіоністи</h1>
+                <a href="user/authorise.html">увійти</a>
             </div>
             <nav>
-                <ul class="navigation-bar">
+                <input id="menu-toggle" type="checkbox">
+                <label id="hamburger-container" for="menu-toggle">
+                    <div class="slice"></div>
+                </label>
+                <ul id="menu">
                     <li><a href="early_impressionists/early_impr.html">Ранні імпресіоністи</a></li>
                     <li><a href="post_impressionists/post_impr.html">Пост-імпресіоністи</a></li>
                     <li><a href="art_gallery.html">Арт-галерея</a></li>
@@ -21,25 +26,25 @@
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="about_author.html">Про автора</a></li>
                 </ul>
-                <ul class="navigation-path">
-                    <li>Головна</li>
+                <ul id="path-navigation">
+                    <li><a href="index.html">Головна</a></li>
                     <li>Арт-словник</li>
                 </ul>
             </nav>
         </header>
         <main>
             <dl>
-                <dt>Impasto</dt>
+                <dt><span id="impasto">Impasto</span></dt>
                 <dd>(італ. impasto - «тісто») — техніка живопису в якій застосовується густе, соковите накладення фарб на окрему область або усе полотно картини. 
                 При застосуванні такої техніки, фарба лягає достатньо густо, так, що стають помітними сліди від пензля.</dd>
-                <dt>Протилежні кольори</dt>
+                <dt><span id="complementary-colors">Протилежні кольори</span></dt>
                 <dd>кольори, що протилежні один-до-одного в колірному спектрі.</dd>
-                <dt>Жорсткі краї</dt>
+                <dt><span id="hard-edge">Жорсткі краї</span></dt>
                 <dd>(англ. hard-edge) - це живопис, в якому спостерігаються різкі переходи між кольоровими ділянками.</dd>
-                <dt>Пленер</dt>
+                <dt><span id="plen-air">Пленер</span></dt>
                 <dd>(фр. en plein air - «на відкритому повітрі») — у живописі термін, який позначає передачу в картині всього багатства змін кольору, зумовлених дією сонячного світла й атмосфери.
                 Пленерний живопис склався в результаті роботи художників на свіжому повітрі, а не в майстерні.</dd>
-                <dt>Ukiyo-e</dt>
+                <dt><span id="ukiyoe">Ukiyo-e</span></dt>
                 <dd>(яп. 浮世絵, - «картини плинного світу» або «сучасні картини») — жанр гравюри і малюнку в Японії, який сформувався у XVII столітті у період Едо. Основна тема цих картин — повсякденне життя людей та пейзажі.</dd>
                 <dt>Кальвадос</dt>
                 <dd>(фр. Calvados) — яблучний бренді, що за назвою походить від департаменту Кальвадос — місцевості в Нижній Нормандії у Франції.</dd>
