@@ -1,0 +1,87 @@
+@media (max-width: 800px) {
+    /* main artist image and ontro text block sting */
+    .image-block figure {
+        align-self: center;
+        max-height: 50%;
+    }
+
+    #artist-intro figure {
+        width: 70%;
+        padding: 0 2%;
+    } 
+}
+
+@media (min-width: 801px) {
+    .image-block{
+        display: flex;
+    }
+
+    .image-block p {
+        width: 50%;
+        margin: 20px;
+    }
+    
+    .image-block figure {
+        width: 50%;
+    }
+
+    /* main artist image and ontro text block sting */
+    #artist-intro figure {
+        width: 30%;
+        float: left;
+        padding: 0 2%;
+    }
+}
+  
+img {
+    width:100%;
+}
+
+/* general styling of artist's intro */
+#artist-intro {
+  display: flow-root;
+  line-height: 1.5;
+  font-family: "Palatino";
+  font-size: 1.3em;
+}
+
+/* styling the navigation between pages */
+#navigation_between_pages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+#navigation_between_pages a {
+  border: 2pt solid grey;
+  border-radius: 10pt;
+  padding: 0.5em;
+  font-size: 15pt;
+  text-decoration: none;
+  color: grey;
+  font-size: 1.25em;
+}
+  
+#prev-page {
+  text-align: left;
+}
+
+#next-page {
+  text-align: right;
+}
+
+#navigation_between_pages span {
+    font-size: 0.75em;
+    font-family: "Palatino";
+    font-weight: bold;
+}
+
+#navigation_between_pages a:hover {
+  color: black;
+} 
+
+/* source materials syling */
+#source-materials * {
+    list-style: none;
+    color: black;
+}

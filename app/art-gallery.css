@@ -1,0 +1,25 @@
+.canvases-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.canvases-container figure {
+    max-width: 50%; 
+}
+
+@media (max-width: 800px) {
+    .canvases-container figure {
+        max-width: 100%; 
+    }
+}
+
+.canvases-container img {
+    width: 100%;
+}
+
+.canvases-container figcaption {
+    width: 100%;
+    text-align: center;
+}

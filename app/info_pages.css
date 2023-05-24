@@ -1,0 +1,34 @@
+/* styling tables */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 3px solid;
+    margin: 5%;
+}
+
+td, th {
+  border: 1px solid;
+  padding: 5px; 
+}
+
+thead {
+  border: 2px solid;
+  background-color: antiquewhite;
+}
+
+table caption {
+  margin-bottom: 5px;
+}  
+
+/* dictiionary styling */
+dt {
+  font-weight: bold;
+  background-color: aqua;
+  margin-bottom: 1pt;
+}
+
+dd {
+    padding: 1%;
+}
+
+

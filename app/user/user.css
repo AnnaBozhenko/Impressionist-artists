@@ -1,0 +1,50 @@
+
+/* user input form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+
+form > div > * {
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form input {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+
+
+/* user form input styling */
+.user_text {
+  display: flex;
+  flex-direction: column;
+} 
+
+.user_text textarea {
+  width: 50%;
+}
+
+.user_text input[type="submit"] {
+  width:fit-content;
+}
+
+/* styling forms for quizzes */
+form legend {
+  background-color: antiquewhite;
+  padding: 5pt 1% 5pt 1%;
+}
+
+form fieldset {
+  border: none;
+}
+

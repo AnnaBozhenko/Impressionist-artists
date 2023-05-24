@@ -1,0 +1,306 @@
+/* style the page in way the footer is displayed sticky in case of small main's content */
+html {
+    height: 100%;
+    box-sizing: border-box;
+} 
+
+body {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family:  "Helvetica", "Trebuchet MS", "Arial";
+}
+
+header, footer {
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 2;
+    padding: 0 5%;
+}
+
+/* styling heading */
+header > div {
+    display: flex;
+    margin: 10px;
+}
+
+header > div h1 {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+}
+header > div a {
+    width: 10%;
+    text-align: right;
+}
+
+/* font anf text appearance styling */
+h1, h2, h3, figcaption {
+    font-family: "Book Antiqua", "Palatino", "Georgia", "Big Caslon";
+}
+h1, h3 {
+    font-size: 2em;
+}
+
+p, li {
+    line-height: 1.5em;
+}
+
+figcaption {
+    text-align: center;
+}
+
+:target {
+    background-color: aqua;
+}
+
+/* styling menu for mobile/tablet screens */
+@media  (max-width: 800px)  {
+    nav {
+        display: flex;
+        position: sticky;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0;
+    }
+
+    #path-navigation {
+        order: 1;
+    }
+    #hamburger-container {
+        order: 2;
+    }
+    #menu {
+        order: 3;
+    }
+
+    #menu, #menu-toggle {
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    /* styling the hamburger icon */
+    #hamburger-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .slice,
+    .slice::before,
+    .slice::after
+    {
+        display: block;
+        position: absolute;
+        background-color: black;
+        height: 6px;
+        width: 30px;
+        border-radius: 3px;
+    }
+
+    .slice::before {
+        margin-top: 10px;
+        content: '';
+    }
+
+    .slice::after {
+        margin-top: -10px;
+        content: '';
+    }
+
+    /*  transforming the hamburger icon into a cross after toggling  */
+    #menu-toggle:checked + #hamburger-container .slice::before {
+        margin-top: 0px;
+        transform: rotate(45deg);
+      }
+      
+      #menu-toggle:checked + #hamburger-container .slice {
+        background-color: white;
+      }
+      
+      #menu-toggle:checked + #hamburger-container .slice::after {
+        margin-top: 0px;
+        transform: rotate(-45deg);
+      }
+
+    /* displaying menu after toggling the hamburger icon */
+    #menu-toggle:checked ~ #menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        margin-top: 50px;
+        border: 2px solid;  
+        list-style-type: none;
+        background-color: black;
+    }
+
+    #menu li {
+        height: 3em;
+        padding: 0.5em 2em;
+    }
+
+    #menu li:not(:last-child) {
+        border-bottom: 2px solid green;
+    }
+
+    #menu a {
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: large;
+        text-decoration: none;
+    }
+
+    #menu a:hover {
+        cursor: pointer;
+        color: #f0cdcd;
+    }
+}
+
+/* styling menu for larger screens */
+@media (min-width: 801px) {
+    /* styling navigation bar */
+    #menu-toggle, #hamburger-container {
+        display: none;
+    }
+
+    #menu {
+        border: 3px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        padding: 2%;
+    }
+
+    #menu li {
+        list-style: none;
+    }
+
+    #menu a {
+        text-decoration: none;
+    }
+}
+
+/* styling -> navigatiion -> path */
+#path-navigation {
+    border: 1pt solid;
+    display: flex;
+    list-style: none;
+    width:fit-content;
+    padding: 0 1%;
+    margin-left: 1%;
+}
+  
+#path-navigation li:not(:last-child)::after {
+  margin: 0 0.25rem;
+  content: "→";
+}
+
+#path-navigation a {
+    text-decoration: none;
+}
+
+/* styling footer */
+footer {
+    width: 100%;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/* for small screens */
+@media (max-width: 800px) {
+    footer ul {
+        display: block;
+        list-style: none;
+        padding: 10px;
+    }
+
+    footer li {
+        margin: 10px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: rgb(139, 136, 136);
+    }
+
+    footer ul a:hover {
+        color: white;
+    }
+
+    footer p > a {
+        color: aqua;
+    }
+
+    footer p {
+        text-align: right;
+        color: white;
+        padding-right: 10px;
+    }
+}
+
+/* for larger screens */
+@media (min-width: 801px) {  
+    footer > ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 5%;
+      list-style: none;
+    }
+    
+    footer a {
+      text-decoration: none;
+      color: rgb(139, 136, 136);
+    }
+
+
+    footer ul a:hover, footer p {
+        color: white;
+    }
+    
+    footer li ul{
+      list-style: none;
+    }
+    
+    footer p {
+      text-align: right;
+      padding-right: 1%;
+    }
+
+    footer p > a {
+        color: aqua;
+    }
+}
+
+/* styling video layout */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+@media (max-width: 800px) {
+    iframe {
+        width: 300px !important; 
+        height: 177px !important;
+    }
+}
