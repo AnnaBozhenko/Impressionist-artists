@@ -2,19 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title>Імпресіоністи</title>
-        <link rel="stylesheet" href="header-styling.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="artists-links.css">
     </head>
     <body>
         <header>
             <div id="heading">
                 <h1>Французькі художники-імпресіоністи</h1>
-                <a href="">увійти</a>
+                <a href="user/authorise.html">увійти</a>
             </div>
             <nav>
                 <input id="menu-toggle" type="checkbox">
-                <label id="menu-container" for="menu-toggle">
+                <label id="hamburger-container" for="menu-toggle">
                     <div class="slice"></div>
                 </label>
                 <ul id="menu">
@@ -23,7 +24,7 @@
                     <li><a href="art_gallery.html">Арт-галерея</a></li>
                     <li><a href="art_dictionary.html">Арт-словник</a></li>
                     <li><a href="user/user.html">Для користувача</a></li>
-                    <li><a href="index.html">Головна</a></li>
+                    <li>Головна</li>
                     <li><a href="about_author.html">Про автора</a></li>
                 </ul>
                 <ul id="path-navigation">
@@ -101,10 +102,10 @@
                 </figure>
             </section>
             <article>
-                <p class="special">A quick reminder of impressionists</p>
-                <video src="videos/imressionism_intro.mp4" controls>
-                    <p>Your browser doesn't support HTML5 video. Here is a <a href="https://youtu.be/3jhHX_tpy70">link to the video</a> instead.</p> 
-                </video>
+                <h3 class="special">Нагадаймо про імпресіонізм</h3>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_tw51Eh9vcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </article>
             <article>
                 <h3>Що притаманне імпресіонізму?</h3>
@@ -112,15 +113,15 @@
                     <li>Кольорова гама</li>
                     <ul>
                         <li>яскраві кольори</li>
-                        <li>протилежні кольори</li>
+                        <li><a href="art_dictionary.html#complementary-colors" target="_blank">протилежні кольори</a></li>
                     </ul>
                     <li>Техніка виконання</li>
                     <ul>
                         <li>швидкі мазки (ілюзія руху)</li>
-                        <li>impasto</li>
-                        <li>уникання різких переходів між контурами</li>
+                        <li><a href="art_dictionary.html#impasto" target="_blank">impasto</a></li>
+                        <li>уникання <a href="art_dictionary.html#hard-edges">жорстких країв</a></li>
                     </ul>
-                    <li>писати на пленері</li>
+                    <li>писати на <a href="art_dictionary.html#plein-air" target="_blank">пленері</a></li>
                     <li>інструменти</li>
                     <ul>
                         <li>олійні фарби</li>
@@ -139,15 +140,15 @@
                 <ol>
                     <li>поява фотографії</li>
                     <li>наукові відкриття в галузі оптики</li>
-                    <li>мистецтво Сходу, особливо Японії, періоду Едо</li>
-                    <li>художники</li>
+                    <li><a href="art_dictionary.html#ukiyoe">мистецтво</a> Сходу, особливо Японії, періоду Едо</li>
+                    <li>художники, що надихнули</li>
                         <ul>
-                            <li>Едуард Мане</li>
-                            <li>Франц Гальс</li>
-                            <li>Дієго Веласкес</li>
-                            <li>Пітер Пауль Рубенс</li>
-                            <li>Джон Констейбл</li>
-                            <li>Джон Уільям Тьорнер</li>
+                            <li><a href="https://www.wikiart.org/en/edouard-manet" target="_blank">Едуард Мане</a></li>
+                            <li><a href="https://www.wikiart.org/en/frans-hals" target="_blank">Франц Гальс</a></li>
+                            <li><a href="https://www.wikiart.org/en/diego-velazquez" target="_blank">Дієго Веласкес</a></li>
+                            <li><a href="https://www.wikiart.org/en/peter-paul-rubens" target="_blank">Пітер Пауль Рубенс</a></li>
+                            <li><a href="https://www.wikiart.org/en/john-constable" target>Джон Констейбл</a></li>
+                            <li><a href="https://www.wikiart.org/en/william-turner" target="_blank">Джозеф Меллорд Уільям Тьорнер</a></li>
                         </ul>
                 </ol>     
             </article>
