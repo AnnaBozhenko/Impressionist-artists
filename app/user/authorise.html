@@ -6,6 +6,7 @@
         <title>Авторизація</title>
         <link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="user.css">
+        <script defer src="authorise.js"></script>
     </head>
     <body>
         <header>
@@ -34,36 +35,20 @@
             </nav>
         </header>
         <main>  
-                <h3>Вже зареєстровані:</h3>
-                <form>
+            <div></div>
+                <form id="login-block">
                     <div>
                         <div>
                             <label for="name">Ім'я користувача:</label>
                             <label for="password">Пароль:</label>
                         </div>
                         <div>
-                            <input type="text" id="name">
-                            <input type="text" id="password">
+                            <input type="text" name="name" id="name" >
+                            <input type="password" name="pass" id="password" minlength="5">
                         </div>
                     </div>
-                    <div><input type="submit" value="увійти"></div>
+                    <div><input type="submit" value="увійти" id="login-btn"></div>
                 </form> 
-                <h3>Ще не зареєстровані:</h3>
-                <form>
-                    <div>
-                        <div>
-                            <label for="name">Вкажіть ім'я:</label>
-                            <label for="email">Вкажіть e-mail:</label>
-                            <label for="pass">Вкажіть пароль:</label>
-                        </div>
-                        <div>
-                            <input type="text" id="name">
-                            <input type="email" id="email">
-                            <input type="password" id="pass" minlength="7">
-                        </div>
-                    </div> 
-                    <div><input type="submit" value="зареєструватися"></div>
-                </form>
                 
         </main>
         <footer>
